@@ -28,8 +28,7 @@ http://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/tree/Documentatio
 
 Hardware connections:
 
-This file interfaces with the Adafruit LIS3DH breakout board:
-https://www.sparkfun.com/products/8736
+This file interfaces with the Adafruit LIS3DH breakout board.
 
 
 To build this file, I use the command:
@@ -54,39 +53,107 @@ Distributed as-is; no warranty is given.
 #include <iostream>
 #include <errno.h>
 #include <wiringPiI2C.h>
+#include <unistd.h>
+
+#define ACCEL_ADDR 0x18
+
+#define X_REG_LO 0x28
+#define X_REG_HI 0x29
+#define Y_REG_LO 0x2A
+#define Y_REG_HI 0x2B
+#define Z_REG_LO 0x2C
+#define Z_REG_HI 0x2D
+
+#define WHO_AM_I 0x0F
+
+#define STATUS_REG 0x07
+
+#define CNTRL_REG_1 0x20
+#define CNTRL_REG_2 0x21
+#define CNTRL_REG_3 0x22
+#define CNTRL_REG_4 0x23
+#define CNTRL_REG_5 0x24
+#define CNTRL_REG_6 0x25
+
+#define INT1_THS 0x32
+#define INT1_DUR 0x33
+#define INT1_CFG 0x30
+
+
 
 using namespace std;
 
 int main()
 {
-   int fd, result;
+   int fd, x, y, z;
 
    // Initialize the interface by giving it an external device ID.
-   // The defaults to address 0x60.   
+   // Could include a shell script here to automatically get it. 
    //
    // It returns a standard file descriptor.
-   // 
-   fd = wiringPiI2CSetup(0x60);
+   
+   // open device
+
+   fd = wiringPiI2CSetup(ACCEL_ADDR);
 
    cout << "Init result: "<< fd << endl;
 
-   for(int i = 0; i < 0x0000ffff; i++)
-   {
-      // I tried using the "fast write" command, but couldn't get it to work.  
-      // It's not entirely obvious what's happening behind the scenes as
-      // regards to endianness or length of data sent.  I think it's only 
-      // sending one byte, when we really need two.
-      //
-      // So instead I'm doing a 16 bit register access.  It appears to 
-      // properly handle the endianness, and the length is specified by the 
-      // call.  The only question was the register address, which is the 
-      // concatenation of the command (010x = write DAC output) 
-      // and power down (x00x = power up) bits.
-      result = wiringPiI2CWriteReg16(fd, 0x40, (i & 0xfff) );
+   cout << "Device ID: "<< wiringPiI2CReadReg8(fd, WHO_AM_I) << endl;
 
-      if(result == -1)
+   
+
+   // settings/startup sequence
+
+   // enable all axes, set data rate to 10Hz, disable low power mode
+   //wiringPiI2CWriteReg8(fd, CNTRL_REG_1, 0x27);
+
+   // filter (disabled)
+   //wiringPiI2CWriteReg8(fd, CNTRL_REG_2, 0x00);
+
+   // interrupts (disabled)
+   //wiringPiI2CWriteReg8(fd, CNTRL_REG_3, 0x00);
+
+   // resolution, endianess (default LSB), scale selection 
+   //wiringPiI2CWriteReg8(fd, CNTRL_REG_4, 0x00); 
+
+   // memory, FIFO, 4D (disabled)
+   //wiringPiI2CWriteReg8(fd, CNTRL_REG_5, 0x00); 
+
+   // misc settings
+   //wiringPiI2CWriteReg8(fd, CNTRL_REG_5, 0x00); 
+
+   // for interrupt settings write to INT1 registers
+
+  
+
+
+
+   usleep(3000000);
+
+   while(true)
+   {
+
+      // check if data is available
+
+      if(wiringPiI2CReadReg8(fd, STATUS_REG) & 0x08)
       {
-         cout << "Error.  Errno is: " << errno << endl;
+      
+
+         // get data from accelorometer (read device's registers)
+
+         x = (wiringPiI2CReadReg8(fd, X_REG_HI) << 8) | wiringPiI2CReadReg8(fd, X_REG_LO);
+         y = (wiringPiI2CReadReg8(fd, Y_REG_HI) << 8) | wiringPiI2CReadReg8(fd, Y_REG_LO);
+         z = (wiringPiI2CReadReg8(fd, Z_REG_HI) << 8) | wiringPiI2CReadReg8(fd, Z_REG_LO);
+
+         // print data
+
+         cout << "X: "<< x << endl; 
+         cout << "Y: "<< y << endl; 
+         cout << "Z: "<< z << endl; 
+
       }
+
+      usleep(300000);
+ 
    }
 }
