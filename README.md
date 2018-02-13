@@ -18,6 +18,6 @@ Between the sleep cycles (when it is the easiest to wake up) a person usually ch
 
 *This concept, obviously, is not new. There are similar devices on the market, tracking the movement of the person / heart rate / breathing in order to detect the sleep stage for the most pleasant wake up experience. However, such alarms on the market exist in a form of phone apps, which require a substantial subscription fee (£4/month or £25/year, depending on the app).*
 
-**The aim of this project is to design a smart alarm system by using various sensors (microphone, accelerometer, pressure sensor). **
+**The aim of this project is to design a smart alarm system by using various sensors (microphone, accelerometer, pressure sensor).**
 
 Erika Bondareva, Nicholas Smith, Lukas Zitinskas.
