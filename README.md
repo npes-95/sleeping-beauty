@@ -26,7 +26,7 @@ Between the sleep cycles (when it is the easiest to wake up) a person usually ch
 
 ## Project specifications:
 
-- [ ] **Resopnsiveness of the application**
+- [ ] **Responsiveness of the application**
 
 - [x] **Latency permitted between physical event and output**
 1 second (not scientifically justified, but an educated guess).
