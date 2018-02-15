@@ -128,7 +128,7 @@ int main()
 
 
 
-   usleep(3000000);
+   sleep(3);
 
    while(true)
    {
