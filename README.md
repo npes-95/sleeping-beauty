@@ -20,4 +20,65 @@ Between the sleep cycles (when it is the easiest to wake up) a person usually ch
 
 **The aim of this project is to design a smart alarm system by using various sensors (microphone, accelerometer, pressure sensor).**
 
-Erika Bondareva, Nicholas Smith, Lukas Zitinskas.
+## Project schematics
+
+![alt text](https://imgur.com/NQQ8QSq.png)
+
+## Project specifications:
+
+- [ ] **Responsiveness of the application**
+
+- [x] **Latency permitted between physical event and output**
+1 second (not scientifically justified, but an educated guess).
+
+- [ ] **Sampling rate**
+The sampling rate of the components used is the following:
+- ADC: 50 – 200 kHz
+- Microphone: 32 – 64 kHz
+- Accelerometer: 1 Hz – 5 kHz
+Due to the specifications of the project, the lowest sampling rate limit was chosen for the ADC and the microphone, while the suitable sampling rate for the accelerometer will have to be decided upon once tested.
+
+- [x] **Bus protocol**
+A number of sensors is used for this project. The following bus protocols are used for the following sensors:
+- Microphone: I2S
+- Accelerometer: I2C
+- Pressure sensors: SPI
+Reason: avoids having to use chip select.
+
+- [x] **Number of channels**
+Six: four pressure sensors, one accelerometer, one microphone.
+
+- [x] **Kernel or userspace**
+Userspace: soft real time system, sampling rate requirements low enough.
+
+- [ ] **Data flow from hardware to GUI**
+
+- [ ] **Buffering of data**
+
+- [ ] **Latency introduced by buffering**
+
+- [ ] **Postprocessing of data**
+
+- [ ] **Threads**
+
+- [ ] **GUI implementation**
+The GUI of choice at the moment is a phone app, but this option is still to be considered, and if it does not work, then create a webpage.
+
+- [ ] **Structure of the software in classes**
+
+- [x] **Team structure**
+From the beginning everyone seemed to be equally involved in the project, willing to contribute as much as they can. If the eagerness persists and the project progresses effectively, no need to give out specific roles to the team members. If it turns out in the future that this is not working effectively, the roles and the contributions would have to be reconsidered.
+
+- [x] **Time allocation**
+The time for hardware design coincided with final year project deadlines (for the presentation specifically). Hence, it took 3 weeks to sort out the hardware. 4 more weeks are allocated to software development, and then 2 weeks for debugging.
+
+- [ ] **Version control software**
+
+- [ ] **Release strategy / publication / publicity**
+
+- [ ] **Success of the application**
+
+### Team members
+- **Erika Bondareva**
+- **Nicholas Smith**
+- **Lukas Zitinskas**
