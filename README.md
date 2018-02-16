@@ -41,8 +41,8 @@ Due to the specifications of the project, the lowest sampling rate limit was cho
 - [x] **Bus protocol**
 A number of sensors is used for this project. The following bus protocols are used for the following sensors:
 - Microphone: I2S
-- Accelerometer: I2C
-- Pressure sensors: SPI
+- Accelerometer: I2C -> [Check out our I2C demo!](https://youtu.be/kbwUbBWLsfQ)
+- Pressure sensors: SPI -> [Check out our SPI demo!](https://youtu.be/tLUy4hVlnH0)
 Reason: avoids having to use chip select.
 
 - [x] **Number of channels**
