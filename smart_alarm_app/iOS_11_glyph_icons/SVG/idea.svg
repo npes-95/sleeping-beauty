@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+<circle cx="15" cy="28" r="1"/>
+<path d="M12,26c0,1.105,0.895,2,2,2h1h1c1.105,0,2-0.895,2-2v-1h-6V26z"/>
+<circle cx="27" cy="12" r="1"/>
+<circle cx="3" cy="12" r="1"/>
+<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -7.6066 22.6066)" cx="23.485" cy="20.485" rx="1" ry="1"/>
+<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -0.5772 5.636)" cx="6.515" cy="3.515" rx="1" ry="1"/>
+<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -12.5772 10.6066)" cx="6.515" cy="20.485" rx="1" ry="1"/>
+<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 4.3934 17.636)" cx="23.485" cy="3.515" rx="1" ry="1"/>
+<path d="M15,3c-4.971,0-9,4.029-9,9c0,5,4,7,6,11h6c2-4,6-6,6-11C24,7.029,19.971,3,15,3z M15,18v-5h-4l4-7v5h4L15,18z"/>
+</svg>

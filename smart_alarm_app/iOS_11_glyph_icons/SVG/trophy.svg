@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+<line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="7" y1="4" x2="23" y2="4"/>
+<path d="M15,20h2c0,0,6-6,6-12V4h-8V20z"/>
+<path d="M20,26H10v-2c0-1.105,0.895-2,2-2h6c1.105,0,2,0.895,2,2V26z"/>
+<line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="10" y1="26" x2="20" y2="26"/>
+<path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="M21,12
+	c0,0,1-4,3.5-4c1.381,0,2.5,1.119,2.5,2.5C27,14,17,17,17,17"/>
+<path d="M15,20h-2c0,0-6-6-6-12V4h8V20z"/>
+<path style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="M9,12
+	c0,0-1-4-3.5-4C4.119,8,3,9.119,3,10.5C3,14,13,17,13,17"/>
+</svg>
