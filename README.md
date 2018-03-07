@@ -22,7 +22,7 @@ Between the sleep cycles (when it is the easiest to wake up) a person usually ch
 
 ## Project schematics
 
-![alt text](https://imgur.com/NQQ8QSq.png)
+![alt text](https://github.com/npes-95/sleeping-beauty/blob/master/smart_alarm_schematics.pdf)
 
 ## Project specifications:
 
