@@ -16,7 +16,7 @@ public:
 
     BLU();
     int dataAvailable();
-    void getData(char* buf_out);
+    char* getData();
 };
 
 #endif

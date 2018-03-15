@@ -56,8 +56,8 @@ int BLU::dataAvailable()
 	}
 }
 
-void BLU::getData(char* buf_out)
+char* BLU::getData()
 {
-	// copies bytes read to output buffer
-	memcpy(buf_out, buf, sizeof(buf_out));
+	// return pointer to data -  user can then copy it etc...
+	return buf;
 }
