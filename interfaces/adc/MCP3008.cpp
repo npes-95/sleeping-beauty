@@ -2,12 +2,12 @@
 #include <errno.h>
 #include <wiringPiSPI.h>
 #include <unistd.h>
-#include "mcp3008_adc.h"
+#include "MCP3008.h"
 
 using namespace std;
 
 
-MCP3008::MCP3008(int spi_channel = 0, int clk_speed = 1000000)
+MCP3008::MCP3008(int spi_channel, int clk_speed)
 {
 	// spi_channel is the SPI channel that the sensor is connected to on the RPi
 	// Set this to 0 or 1, depending on how it's connected.
@@ -27,13 +27,13 @@ MCP3008::MCP3008(int spi_channel = 0, int clk_speed = 1000000)
 
 }
 
-MCP3008::getFileDescriptor()
+int MCP3008::getFileDescriptor()
 {
 	// use this to check if initialisation has been successful
 	return fd;
 }
 
-MCP3008::readChannel(int analog_channel, int channel_config = 8)
+int MCP3008::readChannel(int analog_channel, int channel_config)
 {
 
 	if(analog_channel<0 || analog_channel>7)
