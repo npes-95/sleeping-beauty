@@ -11,13 +11,12 @@ class BLU
     char buf[1024] = { 0 };
     // change this so it can get address for any pi
     char pi_addr[18] = "B8:27:EB:EB:F6:E1";
-    struct sockaddr_rc loc_addr = { 0 }, rem_addr = { 0 };
 
 public:
 
     BLU();
     int dataAvailable();
-    int getData();
+    void getData(char* buf_out);
 };
 
 #endif

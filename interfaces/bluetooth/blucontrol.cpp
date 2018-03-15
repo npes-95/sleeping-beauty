@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <unistd.h>
 #include <sys/socket.h>
 #include <bluetooth/bluetooth.h>
@@ -11,6 +12,8 @@ using namespace std;
 
 BLU::BLU()
 {
+	// set local and remote addresses to 0
+	struct sockaddr_rc loc_addr, rem_addr;
     socklen_t opt = sizeof(rem_addr);
 
     // activate automatic bluetooth pairing through command line
@@ -39,7 +42,7 @@ BLU::BLU()
     memset(buf, 0, sizeof(buf));
 }
 
-BLU::dataAvailable()
+int BLU::dataAvailable()
 {
 	memset(buf, 0, sizeof(buf));
 	bytes_read = read(client, buf, sizeof(buf));
@@ -53,8 +56,8 @@ BLU::dataAvailable()
 	}
 }
 
-BLU::getData()
+void BLU::getData(char* buf_out)
 {
-	// returns number of bytes read
-	return buf;
+	// copies bytes read to output buffer
+	memcpy(buf_out, buf, sizeof(buf_out));
 }
