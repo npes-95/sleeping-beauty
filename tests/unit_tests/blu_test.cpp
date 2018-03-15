@@ -3,10 +3,10 @@
 #include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include "blucontrol.h"
+#include "../../interfaces/bluetooth/blucontrol.h"
 
 // compile using:
-// g++ -c blucontrol.cpp
+// g++ -c ../../interfaces/bluetooth/blucontrol.cpp
 // g++ -c blu_test.cpp
 // g++ blucontrol.o blu_test.o -o blu_test -lbluetooth
 
