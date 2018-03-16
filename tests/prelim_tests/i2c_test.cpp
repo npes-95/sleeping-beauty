@@ -153,7 +153,7 @@ int main()
 
       }
 
-      usleep(300000);
+      sleep(3);
  
    }
 }

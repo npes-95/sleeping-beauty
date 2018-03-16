@@ -43,33 +43,55 @@ LIS3DH::LIS3DH()
 	} else
 	{
 		cout << "Initialisation successful! Device number: " << fd << endl;
+		cout << "Device ID: "<< wiringPiI2CReadReg8(fd, WHO_AM_I) << endl;
 	}
+	
+	
+	// settings/startup sequence
+
+   // enable all axes, set data rate to 10Hz, disable low power mode
+   wiringPiI2CWriteReg8(fd, CNTRL_REG_1, 0x27);
+
+   // filter (disabled)
+   wiringPiI2CWriteReg8(fd, CNTRL_REG_2, 0x00);
+
+   // interrupts (disabled)
+   wiringPiI2CWriteReg8(fd, CNTRL_REG_3, 0x00);
+
+   // resolution, endianess (default LSB), scale selection 
+   wiringPiI2CWriteReg8(fd, CNTRL_REG_4, 0x00); 
+
+   // memory, FIFO, 4D (disabled)
+   wiringPiI2CWriteReg8(fd, CNTRL_REG_5, 0x00); 
+
+   // misc settings
+   wiringPiI2CWriteReg8(fd, CNTRL_REG_5, 0x00); 
 
 }
 
-LIS3DH::getFileDescriptor()
+int LIS3DH::getFileDescriptor()
 {
 	// use this to check if initialisation has been successful
 	return fd;
 }
 
-LIS3DH::dataAvailable()
+int LIS3DH::dataAvailable()
 {
 	// checks is data available in XYZ registers
-	return iringPiI2CReadReg8(fd, STATUS_REG) & 0x08;
+	return wiringPiI2CReadReg8(fd, STATUS_REG) & 0x08;
 }
 
-LIS3DH::readX()
+int LIS3DH::readX()
 {
 	return (wiringPiI2CReadReg8(fd, X_REG_HI) << 8) | wiringPiI2CReadReg8(fd, X_REG_LO);
 }
 
-LIS3DH::readY()
+int LIS3DH::readY()
 {
 	return (wiringPiI2CReadReg8(fd, Y_REG_HI) << 8) | wiringPiI2CReadReg8(fd, Y_REG_LO);
 }
 
-LIS3DH::readZ()
+int LIS3DH::readZ()
 {
 	return (wiringPiI2CReadReg8(fd, Z_REG_HI) << 8) | wiringPiI2CReadReg8(fd, Z_REG_LO);
 }
