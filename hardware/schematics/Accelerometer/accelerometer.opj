@@ -1,0 +1,32 @@
+(ExpressProject "Design1"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\accelerometer.DSN"
+      (Type "Schematic Design")
+      (DisplayName ".\accelerometer.DSN"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x"))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (PartMRUSelector)
+  (MPSSessionName "2064224z")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "H:\Desktop\Schematic & PCB\Schematic\Accelerometer\accelerometer.DSN")
+      (Path "Design Resources"
+         "H:\Desktop\Schematic & PCB\Schematic\Accelerometer\accelerometer.DSN"
+         "SCHEMATIC1")
+      (Select "Design Resources"
+         "H:\Desktop\Schematic & PCB\Schematic\Accelerometer\accelerometer.DSN"
+         "SCHEMATIC1" "Accelerometer"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 488"))
+      (Tab 0))))

@@ -1,0 +1,77 @@
+\t (00:00:00) pad_designer 16.6 P001 (v16-6-112A) Windows 32
+\t (00:00:00)     Journal start - Thu Jul 16 17:06:13 2015
+\t (00:00:00)         Host=VARIDIDUM User=djm4v Pid=5060 CPUs=8
+\t (00:00:00) 
+\i (00:00:04) setwindow form.padedit
+\i (00:00:04) FORM padedit units Inch 
+\i (00:00:05) FORM padedit units Millimeter 
+\i (00:00:07) fillin no 
+\i (00:01:00) FORM padedit units Millimeter 
+\i (00:01:05) fillin no 
+\i (00:01:07) FORM padedit units Mils 
+\i (00:02:11) FORM padedit hole_size_x 10 
+\i (00:02:51) FORM padedit drill_fig Circle 
+\i (00:03:22) FORM padedit layers  
+\i (00:03:26) FORM padedit grid row begin_layer 
+\i (00:03:35) FORM padedit geometry Oblong 
+\i (00:03:40) FORM padedit geometry Square 
+\i (00:03:47) FORM padedit width 20 
+\i (00:03:58) FORM padedit grid row end_layer 
+\i (00:04:01) FORM padedit geometry Square 
+\i (00:04:06) FORM padedit width 20 
+\i (00:04:09) FORM padedit geometry Oblong 
+\i (00:04:14) FORM padedit height 30 
+\i (00:04:18) FORM padedit grid row begin_layer 
+\i (00:04:20) FORM padedit geometry Oblong 
+\i (00:04:24) FORM padedit width 40 
+\i (00:04:34) FORM padedit crossbox YES 
+\i (00:04:47) FORM padedit geometry Rectangle 
+\i (00:04:58) FORM padedit grid row end_layer 
+\i (00:05:01) FORM padedit geometry Rectangle 
+\i (00:05:09) FORM padedit grid row begin_layer 
+\i (00:05:14) FORM padedit stackbox YES 
+\i (00:05:20) FORM padedit grid row soldermask_top 
+\i (00:05:29) FORM padedit grid row filmmask_top 
+\i (00:05:33) FORM padedit geometry Circle 
+\i (00:05:44) FORM padedit width 5.0 
+\i (00:05:47) FORM padedit crossbox YES 
+\i (00:05:54) FORM padedit width 8 
+\i (00:06:06) FORM padedit y_offset 4.0 
+\i (00:06:09) FORM padedit stackbox YES 
+\i (00:06:11) FORM padedit crossbox YES 
+\i (00:06:13) FORM padedit stackbox YES 
+\i (00:06:15) FORM padedit crossbox YES 
+\i (00:06:24) FORM padedit grid row end_layer 
+\i (00:06:36) FORM padedit grid row soldermask_bottom 
+\i (00:06:37) FORM padedit grid row pastemask_top 
+\i (00:06:38) FORM padedit grid row filmmask_top 
+\i (00:06:39) FORM padedit grid row filmmask_bottom 
+\i (00:06:39) FORM padedit grid row soldermask_bottom 
+\i (00:06:41) FORM padedit grid row soldermask_top 
+\i (00:06:43) FORM padedit grid row soldermask_bottom 
+\i (00:06:45) FORM padedit grid row pastemask_top 
+\i (00:06:45) FORM padedit grid row pastemask_bottom 
+\i (00:06:46) FORM padedit grid row filmmask_top 
+\i (00:06:47) FORM padedit grid row filmmask_bottom 
+\i (00:06:57) FORM padedit geometry Square 
+\i (00:07:03) FORM padedit height 5 
+\i (00:07:05) FORM padedit x_offset 5 
+\i (00:07:09) FORM padedit y_offset 5 
+\i (00:07:11) FORM padedit x_offset 0 
+\i (00:07:14) FORM padedit y_offset 0 
+\i (00:07:24) FORM padedit grid row end_layer 
+\i (00:07:27) FORM padedit grid row soldermask_top 
+\i (00:07:28) FORM padedit grid row soldermask_bottom 
+\i (00:07:31) FORM padedit grid row end_layer 
+\i (00:07:35) FORM padedit grid row default_internal 
+\i (00:07:36) FORM padedit grid row soldermask_top 
+\i (00:07:37) FORM padedit grid row soldermask_bottom 
+\i (00:07:38) FORM padedit grid row pastemask_top 
+\i (00:07:38) FORM padedit grid row pastemask_bottom 
+\i (00:07:41) FORM padedit grid row filmmask_top 
+\i (00:07:43) FORM padedit grid row filmmask_bottom 
+\i (00:07:44) FORM padedit grid row filmmask_top 
+\i (00:07:45) FORM padedit grid row filmmask_bottom 
+\i (00:07:50) FORM padedit stackbox YES 
+\i (00:07:56) pse_exit
+\t (00:07:56)     Journal end - Thu Jul 16 17:14:09 2015

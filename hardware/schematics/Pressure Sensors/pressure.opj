@@ -1,0 +1,58 @@
+(ExpressProject "Design1"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\pressure.dsn"
+      (Type "Schematic Design")
+      (DisplayName ".\pressure.DSN"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x"))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    ("HEADER 2"
+      (FullPartName "HEADER 2.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (GND
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (LF353
+      (FullPartName "LF353.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\OPAMP.OLB")
+      (DeviceIndex "1")))
+  (LastUsedLibraryBrowseDirectory "C:\Cadence\SPB_17.2\tools\capture\library")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "H:\Desktop\Schematic & PCB\Schematic\Pressure Sensors\pressure.dsn")
+      (Path "Design Resources"
+         "H:\Desktop\Schematic & PCB\Schematic\Pressure Sensors\pressure.dsn"
+         "SCHEMATIC1")
+      (Select "Design Resources"
+         "H:\Desktop\Schematic & PCB\Schematic\Pressure Sensors\pressure.dsn"
+         "SCHEMATIC1" "Pressure"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 483"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 156 1475 156 678")
+        (Scroll "-279 -8")
+        (Zoom "102")
+        (Occurrence "/"))
+      (Path
+         "H:\DESKTOP\SCHEMATIC & PCB\SCHEMATIC\PRESSURE SENSORS\PRESSURE.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "Pressure")))
+  (MPSSessionName "2064224z"))
