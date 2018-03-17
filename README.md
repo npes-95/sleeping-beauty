@@ -24,6 +24,24 @@ Between the sleep cycles (when it is the easiest to wake up) a person usually ch
 
 ![alt text](https://github.com/npes-95/sleeping-beauty/blob/master/media/smart_alarm_schematics.png)
 
+## Main Board
+
+![alt text](https://github.com/npes-95/sleeping-beauty/hardware/schematic/Main Schematic.PNG)
+
+![alt text](https://github.com/npes-95/sleeping-beauty/hardware/pcb/Main PCB.PNG)
+
+## Pressure Board
+
+![alt text](https://github.com/npes-95/sleeping-beauty/hardware/schematic/Pressure Schematic.PNG)
+
+![alt text](https://github.com/npes-95/sleeping-beauty/hardware/pcb/Pressure PCB.PNG)
+
+## Accelerometer Board
+
+![alt text](https://github.com/npes-95/sleeping-beauty/hardware/schematic/Accelerometer Schematic.PNG)
+
+![alt text](https://github.com/npes-95/sleeping-beauty/hardware/pcb/Accelerometer.PNG)
+
 ## Project specifications:
 
 - [ ] **Responsiveness of the application**
