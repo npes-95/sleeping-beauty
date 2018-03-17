@@ -20,13 +20,35 @@ Between the sleep cycles (when it is the easiest to wake up) a person usually ch
 
 **The aim of this project is to design a smart alarm system by using various sensors (microphone, accelerometer, pressure sensor).**
 
-## Project schematics
+## Overall System Diagram
 
 ![alt text](https://github.com/npes-95/sleeping-beauty/blob/master/media/smart_alarm_schematics.png)
+
+## Components
+
+- Raspberry Pi 3 Model B
+[[Specifications](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)]
+[[Pin Out](https://pinout.xyz/)]
+
+- LM2937 v3.3 Voltage Regulator 
+[[Datasheet](https://github.com/npes-95/sleeping-beauty/blob/master/hardware/Datasheets/Regulator.pdf)]
+
+- MCP3008 10-Bit A/D Converter
+[[Datasheet](https://github.com/npes-95/sleeping-beauty/blob/master/hardware/Datasheets/MCP3008.pdf)]
+
+- Adafruit LIS3DH Triple-Axis Accelerometer 
+[[Datasheet](https://github.com/npes-95/sleeping-beauty/blob/master/hardware/Datasheets/Accelerometer.pdf)]
+
+- I2S Output Digital Microphone
+[[Datasheet](https://github.com/npes-95/sleeping-beauty/blob/master/hardware/Datasheets/Microphone.PDF)]
+
+- FSR 400 Pressure Sensor
+[[Datasheet](https://github.com/npes-95/sleeping-beauty/blob/master/hardware/Datasheets/Pressure.pdf)]
 
 ## Main Board
 
 ![alt text](https://github.com/npes-95/sleeping-beauty/blob/master/hardware/schematic/Main%20Schematic.PNG)
+
 
 ![alt text](https://github.com/npes-95/sleeping-beauty/blob/master/hardware/pcb/Main%20PCB.PNG)
 
@@ -34,11 +56,13 @@ Between the sleep cycles (when it is the easiest to wake up) a person usually ch
 
 ![alt text](https://github.com/npes-95/sleeping-beauty/blob/master/hardware/schematic/Pressure%20Schematic.PNG)
 
+
 ![alt text](https://github.com/npes-95/sleeping-beauty/blob/master/hardware/pcb/Pressure%20PCB.PNG)
 
 ## Accelerometer Board
 
 ![alt text](https://github.com/npes-95/sleeping-beauty/blob/master/hardware/schematic/Accelerometer%20Schematic.PNG)
+
 
 ![alt text](https://github.com/npes-95/sleeping-beauty/blob/master/hardware/pcb/Accelerometer.PNG)
 
