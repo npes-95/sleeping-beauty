@@ -1,0 +1,1084 @@
+\t (00:00:01) allegro 17.2 S013 Windows SPB 64-bit Edition
+\t (00:00:01)     Journal start - Fri Mar 16 15:40:52 2018
+\t (00:00:01)         Host=RANK329-03 User=2064224z Pid=2596 CPUs=8
+\t (00:00:01) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe H:\Desktop\Schematic & PCB\Schematic\Pressure Sensors\PCB\Pressure_v1.0.brd
+\t (00:00:01) 
+   (00:00:01) Loading axlcore.cxt 
+\t (00:00:03) Opening existing design...
+\d (00:00:03) Design opened: H:/Desktop/Schematic & PCB/Schematic/Pressure Sensors/PCB/Pressure_v1.0.brd
+\i (00:00:03) trapsize 1376
+\i (00:00:03) trapsize 1407
+\i (00:00:03) trapsize 1407
+\i (00:00:03) generaledit 
+\i (00:00:07) define bbvia 
+\w (00:00:07) No default via found.
+\i (00:00:11) setwindow form.bbvia
+\i (00:00:11) FORM bbvia add  
+\w (00:00:11) No default via found.
+\i (00:00:13) FORM bbvia new delete  
+\i (00:00:13) FORM bbvia cancel  
+\i (00:00:14) setwindow pcb
+\i (00:00:14) generaledit 
+\i (00:00:17) auto define bbvia 
+\i (00:00:21) setwindow form.auto_bbvia
+\i (00:00:21) FORM auto_bbvia cancel  
+\i (00:00:21) setwindow pcb
+\i (00:00:21) generaledit 
+\i (00:00:23) define bbvia 
+\w (00:00:23) No default via found.
+\i (00:00:28) setwindow form.bbvia
+\i (00:00:28) FORM bbvia new name gu-via80 
+\i (00:00:28) FORM bbvia done  
+\e (00:00:28) Missing Padstack to copy.
+\i (00:00:29) FORM bbvia gu-via80 pad_browser  
+\t (00:00:37) No valid name selected.
+\i (00:00:40) fillin "Gu-via80"
+\i (00:00:42) FORM bbvia done  
+\e (00:00:42) Missing start or end subclass.
+\i (00:00:43) FORM bbvia done  
+\e (00:00:43) Missing start or end subclass.
+\i (00:00:46) FORM bbvia gu-via80 start_layername TOP 
+\i (00:00:47) FORM bbvia gu-via80 end_layername TOP 
+\i (00:00:48) FORM bbvia gu-via80 end_layername BOTTOM 
+\i (00:00:50) FORM bbvia add  
+\w (00:00:50) No default via found.
+\i (00:00:52) FORM bbvia done  
+\i (00:00:52) setwindow pcb
+\i (00:00:52) generaledit 
+\i (00:00:52) pick grid -1591.63 -281.10
+\t (00:00:52) last pick:  -1600.00 -275.00
+\i (00:00:54) prepopup -637.50 636.44
+\i (00:00:55) pick grid -1388.98 526.68
+\t (00:00:55) last pick:  -1400.00 525.00
+\i (00:00:56) add connect 
+\t (00:00:56) Pick first element.
+\i (00:00:58) pick grid 705.04 259.30
+\t (00:00:59) last pick:  700.00 250.00
+\t (00:00:59) Target Symbol Pin is defined from TOP to BOTTOM.
+\t (00:00:59) last pick:  700.00 250.00
+\i (00:00:59) prepopup 820.43 107.31
+\i (00:01:01) cancel 
+\i (00:01:01) generaledit 
+\i (00:01:08) auto define bbvia 
+\i (00:01:09) setwindow form.auto_bbvia
+\i (00:01:09) FORM auto_bbvia cancel  
+\i (00:01:09) setwindow pcb
+\i (00:01:09) generaledit 
+\i (00:01:11) define bbvia 
+\w (00:01:11) No default via found.
+\i (00:01:13) setwindow form.bbvia
+\i (00:01:13) FORM bbvia cancel  
+\i (00:01:13) setwindow pcb
+\i (00:01:13) generaledit 
+\i (00:01:15) auto define bbvia 
+\i (00:01:17) setwindow form.auto_bbvia
+\i (00:01:17) FORM auto_bbvia cancel  
+\i (00:01:17) setwindow pcb
+\i (00:01:17) generaledit 
+\i (00:23:26) prmed 
+\i (00:23:28) setwindow form.prmedit
+\i (00:23:28) FORM prmedit design  
+\i (00:23:29) FORM prmedit text  
+\i (00:23:30) FORM prmedit shapes  
+\i (00:23:31) FORM prmedit route  
+\i (00:23:33) FORM prmedit mfg_applications  
+\i (00:23:35) FORM prmedit route  
+\i (00:23:35) FORM prmedit shapes  
+\i (00:23:36) FORM prmedit text  
+\i (00:23:36) FORM prmedit display  
+\i (00:23:37) FORM prmedit cancel  
+\i (00:23:37) setwindow pcb
+\i (00:23:37) generaledit 
+\i (00:23:45) padeditdb 
+\i (00:24:16) cmgr 
+\i (00:24:17) setwindow cmgr
+\i (00:24:17) cm newView ( kConsmgr worksheet "171:Same Net Spacing" "172:Same Net Spacing Constraint Set" "173:All Layers" "174:All Layers" )
+\i (00:24:17) cm newView ( kConsmgr worksheet 145:DRC 43:DRC 44:Electrical 45:Electrical )
+\i (00:24:17) cm newView ( kConsmgr worksheet 145:DRC 43:DRC 49:Physical 50:Physical )
+\i (00:24:17) cm newView ( kConsmgr worksheet 145:DRC 43:DRC 46:Spacing 48:Spacing )
+\i (00:24:17) cm newView ( kConsmgr worksheet 55:Physical "56:Physical Constraint Set" "57:All Layers" "323:All Layers" )
+\i (00:24:17) cm newView ( kConsmgr worksheet 55:Physical 61:Net "62:All Layers" "63:All Layers" )
+\i (00:24:17) cm newView ( kConsmgr worksheet 55:Physical 68:Region "69:All Layers" "70:All Layers" )
+\i (00:24:17) cm newView ( kConsmgr worksheet 53:Electrical "1:Electrical Constraint Set" 7:Routing "32:Differential Pair" )
+\i (00:24:17) cm newView ( kConsmgr worksheet 53:Electrical 66:Net 25:Routing "30:Relative Propagation Delay" )
+\i (00:24:17) cm select ( frame ( kConsmgr workbook "171:Same Net Spacing" "172:Same Net Spacing Constraint Set" "173:All Layers" ) )
+\i (00:24:17) cm select ( frame ( kConsmgr workbook 145:DRC 43:DRC 44:Electrical ) )
+\i (00:24:17) cm select ( frame ( kConsmgr workbook 145:DRC 43:DRC 49:Physical ) )
+\i (00:24:17) cm select ( frame ( kConsmgr workbook 145:DRC 43:DRC 46:Spacing ) )
+\i (00:24:17) cm select ( frame ( kConsmgr workbook 55:Physical "56:Physical Constraint Set" "57:All Layers" ) )
+\i (00:24:17) cm select ( frame ( kConsmgr workbook 55:Physical 61:Net "62:All Layers" ) )
+\i (00:24:17) cm select ( frame ( kConsmgr workbook 55:Physical 68:Region "69:All Layers" ) )
+\i (00:24:17) cm select ( frame ( kConsmgr workbook 53:Electrical "1:Electrical Constraint Set" 7:Routing ) )
+\i (00:24:17) cm select ( frame ( kConsmgr workbook 53:Electrical 66:Net 25:Routing ) )
+\i (00:24:31) cm scope Design "Pressure_v1.0"
+\i (00:24:31) cm expand ( row ( "Object Type" "XNets/Nets" ) )
+\i (00:24:37) cm select ( frame ( kConsmgr workbook 55:Physical "56:Physical Constraint Set" "57:All Layers" ) )
+\i (00:24:51) cm setColumnFilter ( kConsmgr column 55:Physical "56:Physical Constraint Set" "57:All Layers" "323:All Layers" 0:Vias ) "gu-via80&#13;&#10;gu-via80&#13;
+\i (00:24:55) setwindow pcb
+\i (00:24:55) generaledit 
+\i (00:25:01) setwindow cmgr
+\i (00:25:01) cm select ( frame ( kConsmgr workbook 55:Physical "56:Physical Constraint Set" "57:All Layers" ) )
+\i (00:25:03) cm select ( frame ( kConsmgr workbook 55:Physical 61:Net "62:All Layers" ) )
+\i (00:25:08) setwindow pcb
+\i (00:25:08) QtFillin OK
+\i (00:25:09) setwindow cmgr
+\i (00:25:09) cm expand ( row ( "Object Type" "XNets/Nets" ) )
+\i (00:25:12) setwindow pcb
+\i (00:25:12) QtFillin OK
+\i (00:25:44) setwindow cmgr
+\i (00:25:44) cm setColumnFilter ( kConsmgr column 55:Physical 61:Net "62:All Layers" "63:All Layers" 0:Vias ) "gu-via80&#13;&#10;gu-via80&#13;
+\i (00:25:47) cm select ( frame ( kConsmgr workbook 55:Physical 61:Net "62:All Layers" ) )
+\i (00:25:47) cm select ( frame ( kConsmgr workbook 55:Physical 61:Net "62:All Layers" ) )
+\i (00:25:47) cm select ( frame ( kConsmgr workbook 55:Physical 68:Region "69:All Layers" ) )
+\i (00:25:51) cm select ( frame ( kConsmgr workbook 55:Physical 61:Net "62:All Layers" ) )
+\i (00:25:52) cm select ( frame ( kConsmgr workbook 55:Physical "56:Physical Constraint Set" "57:All Layers" ) )
+\i (00:25:55) cm select ( frame ( kConsmgr workbook 55:Physical "56:Physical Constraint Set" "57:All Layers" ) )
+\i (00:26:00) cm close ( frame ( kConsmgr workbook "171:Same Net Spacing" "172:Same Net Spacing Constraint Set" "173:All Layers" ) )
+\i (00:26:00) cm close ( frame ( kConsmgr workbook 145:DRC 43:DRC 44:Electrical ) )
+\i (00:26:00) cm close ( frame ( kConsmgr workbook 145:DRC 43:DRC 49:Physical ) )
+\i (00:26:00) cm close ( frame ( kConsmgr workbook 145:DRC 43:DRC 46:Spacing ) )
+\i (00:26:00) cm close ( frame ( kConsmgr workbook 55:Physical "56:Physical Constraint Set" "57:All Layers" ) )
+\i (00:26:00) cm close ( frame ( kConsmgr workbook 55:Physical 61:Net "62:All Layers" ) )
+\i (00:26:00) cm close ( frame ( kConsmgr workbook 55:Physical 68:Region "69:All Layers" ) )
+\i (00:26:00) cm close ( frame ( kConsmgr workbook 53:Electrical "1:Electrical Constraint Set" 7:Routing ) )
+\i (00:26:00) cm close ( frame ( kConsmgr workbook 53:Electrical 66:Net 25:Routing ) )
+\i (00:26:00) cm exit
+\i (00:26:01) setwindow pcb
+\i (00:26:01) pick grid -541.80 39.76
+\t (00:26:01) last pick:  -550.00 50.00
+\i (00:26:01) prepopup -538.99 87.61
+\i (00:26:03) add connect 
+\t (00:26:03) Pick first element.
+\i (00:26:04) pick grid 434.84 326.84
+\t (00:26:04) last pick:  425.00 325.00
+\t (00:26:04) last pick:  400.00 350.00
+\t (00:26:04) Target Symbol Pin is defined from TOP to BOTTOM.
+\t (00:26:04) last pick:  400.00 350.00
+\i (00:26:05) prepopup 693.78 -44.67
+\i (00:26:06) prepopup 547.42 70.72
+\i (00:26:06) cancel 
+\i (00:26:07) generaledit 
+\i (00:26:10) define bbvia 
+\w (00:26:10) No default via found.
+\i (00:26:16) setwindow form.bbvia
+\i (00:26:16) FORM bbvia new name gu-via80 
+\i (00:26:16) FORM bbvia done  
+\e (00:26:16) Missing Padstack to copy.
+\i (00:26:17) FORM bbvia gu-via80 pad_browser  
+\t (00:26:24) No valid name selected.
+\i (00:26:26) fillin "Gu-via80"
+\i (00:26:29) FORM bbvia gu-via80 start_layername TOP 
+\i (00:26:30) FORM bbvia gu-via80 end_layername TOP 
+\i (00:26:31) FORM bbvia done  
+\e (00:26:31) Start and end layers cannot be equal
+\e (00:26:31) ERROR(SPMHGE-91): Subclasses are equal.
+\i (00:26:33) FORM bbvia done  
+\e (00:26:33) Start and end layers cannot be equal
+\e (00:26:33) ERROR(SPMHGE-91): Subclasses are equal.
+\i (00:26:33) FORM bbvia done  
+\e (00:26:33) Start and end layers cannot be equal
+\e (00:26:33) ERROR(SPMHGE-91): Subclasses are equal.
+\i (00:26:33) FORM bbvia done  
+\e (00:26:33) Start and end layers cannot be equal
+\e (00:26:33) ERROR(SPMHGE-91): Subclasses are equal.
+\i (00:26:33) FORM bbvia done  
+\e (00:26:33) Start and end layers cannot be equal
+\e (00:26:33) ERROR(SPMHGE-91): Subclasses are equal.
+\i (00:26:34) FORM bbvia done  
+\e (00:26:34) Start and end layers cannot be equal
+\e (00:26:34) ERROR(SPMHGE-91): Subclasses are equal.
+\i (00:26:34) FORM bbvia done  
+\e (00:26:34) Start and end layers cannot be equal
+\e (00:26:34) ERROR(SPMHGE-91): Subclasses are equal.
+\i (00:26:34) FORM bbvia done  
+\e (00:26:34) Start and end layers cannot be equal
+\e (00:26:34) ERROR(SPMHGE-91): Subclasses are equal.
+\i (00:26:34) FORM bbvia done  
+\e (00:26:34) Start and end layers cannot be equal
+\e (00:26:34) ERROR(SPMHGE-91): Subclasses are equal.
+\i (00:26:35) FORM bbvia done  
+\e (00:26:35) Start and end layers cannot be equal
+\e (00:26:35) ERROR(SPMHGE-91): Subclasses are equal.
+\i (00:26:35) FORM bbvia done  
+\e (00:26:35) Start and end layers cannot be equal
+\e (00:26:35) ERROR(SPMHGE-91): Subclasses are equal.
+\i (00:26:35) FORM bbvia done  
+\e (00:26:35) Start and end layers cannot be equal
+\e (00:26:35) ERROR(SPMHGE-91): Subclasses are equal.
+\i (00:26:36) FORM bbvia done  
+\e (00:26:36) Start and end layers cannot be equal
+\e (00:26:36) ERROR(SPMHGE-91): Subclasses are equal.
+\i (00:26:36) FORM bbvia done  
+\e (00:26:36) Start and end layers cannot be equal
+\e (00:26:36) ERROR(SPMHGE-91): Subclasses are equal.
+\i (00:26:37) FORM bbvia done  
+\e (00:26:37) Start and end layers cannot be equal
+\e (00:26:37) ERROR(SPMHGE-91): Subclasses are equal.
+\i (00:26:39) FORM bbvia gu-via80 end_layername BOTTOM 
+\i (00:26:40) FORM bbvia done  
+\i (00:26:40) setwindow pcb
+\i (00:26:40) generaledit 
+\i (00:26:43) add connect 
+\t (00:26:43) Pick first element.
+\i (00:26:44) pick grid 395.44 354.99
+\t (00:26:44) last pick:  400.00 350.00
+\t (00:26:44) Target Symbol Pin is defined from TOP to BOTTOM.
+\t (00:26:44) last pick:  400.00 350.00
+\i (00:26:44) prepopup 493.95 67.91
+\i (00:26:48) cancel 
+\i (00:26:48) generaledit 
+\i (00:26:51) define bbvia 
+\w (00:26:51) No default via found.
+\i (00:26:54) setwindow form.bbvia
+\i (00:26:54) FORM bbvia cancel  
+\i (00:26:54) setwindow pcb
+\i (00:26:54) generaledit 
+\i (00:26:56) auto define bbvia 
+\i (00:26:58) setwindow form.auto_bbvia
+\i (00:26:58) FORM auto_bbvia available_rules DEFAULT 
+\i (00:26:59) FORM auto_bbvia selected_rules DEFAULT 
+\i (00:27:01) FORM auto_bbvia bbvia_list  
+\t (00:27:05) No valid name selected.
+\i (00:27:07) fillin "Gu-via80"
+\i (00:27:12) FORM auto_bbvia execute  
+\t (00:27:12) Starting Create bbvia list...
+\e (00:27:14) ERROR(SPMHGE-268): bbvia had errors, use Viewlog to review the log file.
+\t (00:27:15) A problem occurred - check the bbvia logfile.
+\i (00:27:18) setwindow pcb
+\i (00:27:18) setwindow text
+\i (00:27:18) close
+\i (00:27:19) setwindow form.auto_bbvia
+\i (00:27:19) FORM auto_bbvia end_layer BOTTOM 
+\i (00:27:20) FORM auto_bbvia execute  
+\t (00:27:20) Starting Create bbvia list...
+\t (00:27:21) Opening existing design...
+\i (00:27:21) setwindow pcb
+\i (00:27:21) trapsize 1407
+\t (00:27:22) bbvia is complete.
+\i (00:27:24) setwindow form.auto_bbvia
+\i (00:27:24) FORM auto_bbvia cancel  
+\i (00:27:24) setwindow pcb
+\i (00:27:24) generaledit 
+\i (00:27:26) add connect 
+\t (00:27:26) Pick first element.
+\i (00:27:27) pick grid 437.66 329.66
+\t (00:27:27) last pick:  450.00 325.00
+\t (00:27:27) last pick:  400.00 350.00
+\t (00:27:27) Target Symbol Pin is defined from TOP to BOTTOM.
+\t (00:27:27) last pick:  400.00 350.00
+\i (00:27:28) prepopup 493.95 73.54
+\i (00:27:30) pop bbdrill 
+\t (00:27:30) TOP-BOTTOM used for drill.
+\t (00:27:30) DRC error(s) created.
+\i (00:27:32) prepopup 491.13 84.79
+\i (00:27:33) pop bbdrill 
+\t (00:27:33) TOP-BOTTOM used for drill.
+\t (00:27:33) DRC error(s) created.
+\i (00:27:34) pick grid 485.50 25.69
+\t (00:27:34) last pick:  475.00 25.00
+\t (00:27:34) No DRC errors detected.
+\i (00:27:35) prepopup 488.32 14.43
+\i (00:27:36) pop bbdrill 
+\t (00:27:36) TOP-BOTTOM used for drill.
+\t (00:27:36) No DRC errors detected.
+\i (00:27:37) prepopup 527.72 -92.52
+\i (00:27:38) cancel 
+\i (00:27:38) generaledit 
+\i (00:27:40) add connect 
+\t (00:27:40) Pick first element.
+\i (00:27:41) pick grid 429.21 -604.77
+\t (00:27:41) last pick:  425.00 -600.00
+\t (00:27:41) last pick:  400.00 -600.00
+\t (00:27:41) Target Symbol Pin is defined from TOP to BOTTOM.
+\t (00:27:41) last pick:  400.00 -600.00
+\i (00:27:48) pick grid 468.62 -340.20
+\t (00:27:48) last pick:  475.00 -350.00
+\t (00:27:48) No DRC errors detected.
+\i (00:27:48) prepopup 468.62 -348.65
+\i (00:27:49) pop bbdrill 
+\t (00:27:49) TOP-BOTTOM used for drill.
+\t (00:27:49) No DRC errors detected.
+\i (00:27:50) prepopup 468.62 -343.02
+\i (00:27:52) pop dyn_option_select 'Change Alternate Layer@:@TOP' 
+\i (00:27:53) mouse_pos 485.50 -373.98
+\i (00:27:53) mouse_pos 491.13 -393.68
+\i (00:27:54) prepopup 508.02 -354.27
+\i (00:27:55) pop dyn_option_select 'Change Active Layer@:@TOP' 
+\i (00:27:57) pick grid 471.43 -8.09
+\t (00:27:57) last pick:  475.00 0.00
+\t (00:27:57) No DRC errors detected.
+\i (00:27:58) prepopup 465.80 8.80
+\i (00:28:00) pop bbdrill 
+\t (00:28:00) TOP-BOTTOM used for drill.
+\t (00:28:00) No DRC errors detected.
+\i (00:28:01) prepopup 479.87 -10.90
+\i (00:28:03) pop dyn_option_select 'Change Active Layer@:@BOTTOM' 
+\i (00:28:04) mouse_pos 462.99 338.10
+\i (00:28:05) pick grid 434.84 357.80
+\t (00:28:05) last pick:  425.00 350.00
+\t (00:28:05) No DRC errors detected.
+\t (00:28:05) Pick first element.
+\i (00:28:05) prepopup 367.29 160.79
+\i (00:28:06) done 
+\i (00:28:06) generaledit 
+\i (00:28:06) zoom in 1 
+\i (00:28:06) setwindow pcb
+\i (00:28:06) zoom in 1037.15 -24.97
+\i (00:28:06) trapsize 704
+\i (00:28:08) drag_start grid 475.66 -9.49
+\i (00:28:08) slide 
+\t (00:28:08) Waiting for the destination pick.
+\i (00:28:10) drag_stop grid 475.66 -44.67
+\t (00:28:10) No DRC errors detected.
+\i (00:28:10) generaledit 
+\i (00:28:10) pick grid 679.71 -423.22
+\t (00:28:10) last pick:  675.00 -425.00
+\i (00:28:10) pick grid 648.75 -289.53
+\t (00:28:10) last pick:  650.00 -300.00
+\i (00:28:11) zoom out 1 
+\i (00:28:11) setwindow pcb
+\i (00:28:11) zoom out 648.75 -289.53
+\i (00:28:11) trapsize 1407
+\i (00:28:13) zoom in 1 
+\i (00:28:13) setwindow pcb
+\i (00:28:13) zoom in 969.61 110.13
+\i (00:28:13) trapsize 704
+\i (00:28:13) zoom out 1 
+\i (00:28:13) setwindow pcb
+\i (00:28:13) zoom out 862.66 453.50
+\i (00:28:13) trapsize 1407
+\i (00:28:14) zoom in 1 
+\i (00:28:14) setwindow pcb
+\i (00:28:14) zoom in 955.53 -84.07
+\i (00:28:14) trapsize 704
+\i (00:28:15) zoom out 1 
+\i (00:28:15) setwindow pcb
+\i (00:28:15) zoom out 789.48 -91.10
+\i (00:28:15) trapsize 1407
+\i (00:28:15) zoom out 1 
+\i (00:28:15) setwindow pcb
+\i (00:28:15) zoom out 775.40 -113.62
+\i (00:28:15) trapsize 2815
+\i (00:28:15) zoom in 1 
+\i (00:28:15) setwindow pcb
+\i (00:28:15) zoom in -770.80 32.74
+\i (00:28:15) trapsize 1407
+\i (00:28:22) add connect 
+\t (00:28:22) Pick first element.
+\i (00:28:23) pick grid -281.07 -251.53
+\t (00:28:23) last pick:  -275.00 -250.00
+\t (00:28:23) last pick:  -300.00 -250.00
+\t (00:28:23) Target Symbol Pin is defined from TOP to BOTTOM.
+\t (00:28:23) last pick:  -300.00 -250.00
+\i (00:28:23) prepopup -281.07 -251.53
+\i (00:28:24) pop dyn_option_select 'Change Active Layer@:@TOP' 
+\i (00:28:26) pick grid -154.41 -110.80
+\t (00:28:26) last pick:  -150.00 -100.00
+\t (00:28:26) No DRC errors detected.
+\i (00:28:28) pick grid 414.12 41.18
+\t (00:28:28) last pick:  425.00 50.00
+\t (00:28:28) No DRC errors detected.
+\i (00:28:30) pick grid 892.60 58.07
+\t (00:28:30) last pick:  900.00 50.00
+\t (00:28:30) No DRC errors detected.
+\i (00:28:31) prepopup 901.04 55.25
+\i (00:28:32) pop bbdrill 
+\t (00:28:32) TOP-BOTTOM used for drill.
+\t (00:28:32) No DRC errors detected.
+\i (00:28:32) prepopup 906.67 38.37
+\i (00:28:34) pop dyn_option_select 'Change Active Layer@:@BOTTOM' 
+\i (00:28:34) mouse_pos 785.64 249.46
+\i (00:28:35) mouse_pos 746.24 184.72
+\i (00:28:35) mouse_pos 723.72 187.54
+\i (00:28:36) mouse_pos 788.46 226.94
+\i (00:28:37) pick grid 856.01 238.20
+\t (00:28:37) last pick:  850.00 250.00
+\t (00:28:37) No DRC errors detected.
+\i (00:28:37) mouse_pos 785.64 260.72
+\i (00:28:38) pick grid 684.32 252.27
+\t (00:28:38) last pick:  675.00 250.00
+\t (00:28:38) No DRC errors detected.
+\t (00:28:38) Pick first element.
+\i (00:28:38) prepopup 870.08 179.09
+\i (00:28:39) done 
+\i (00:28:39) generaledit 
+\i (00:28:43) add connect 
+\t (00:28:43) Pick first element.
+\i (00:28:47) pick grid 796.90 -172.72
+\t (00:28:47) last pick:  800.00 -175.00
+\t (00:28:47) Target Symbol Pin is defined from TOP to BOTTOM.
+\t (00:28:47) last pick:  800.00 -175.00
+\i (00:28:55) prepopup 704.02 -82.66
+\i (00:28:56) pop bbdrill 
+\t (00:28:56) TOP-BOTTOM used for drill.
+\t (00:28:56) No DRC errors detected.
+\i (00:28:56) mouse_pos 895.41 -487.95
+\i (00:28:56) mouse_pos 895.41 -485.14
+\i (00:29:00) pick grid 1067.10 35.55
+\t (00:29:00) last pick:  1075.00 25.00
+\t (00:29:00) No DRC errors detected.
+\i (00:29:02) prepopup 985.48 -43.25
+\i (00:29:03) cancel 
+\i (00:29:03) generaledit 
+\i (00:29:05) add connect 
+\t (00:29:05) Pick first element.
+\i (00:29:08) pick grid 802.53 -169.91
+\t (00:29:08) last pick:  800.00 -175.00
+\t (00:29:08) Target Symbol Pin is defined from TOP to BOTTOM.
+\t (00:29:08) last pick:  800.00 -175.00
+\i (00:29:08) prepopup 802.53 -169.91
+\i (00:29:09) pop bbdrill 
+\t (00:29:09) TOP-BOTTOM used for drill.
+\t (00:29:09) No DRC errors detected.
+\i (00:29:12) prepopup 802.53 -99.55
+\i (00:29:13) cancel 
+\i (00:29:13) generaledit 
+\i (00:29:16) slide 
+\t (00:29:16) Pick element to slide.
+\i (00:29:17) pick grid 816.60 -9.48
+\t (00:29:17) last pick:  825.00 0.00
+\t (00:29:17) last pick:  813.04 -13.04
+\t (00:29:17) Waiting for the destination pick.
+\i (00:29:20) pick grid 737.80 -46.07
+\t (00:29:20) last pick:  750.00 -50.00
+\t (00:29:20) No DRC errors detected.
+\t (00:29:20) Pick another element to slide.
+\i (00:29:20) pick grid 892.60 27.11
+\t (00:29:20) last pick:  900.00 25.00
+\t (00:29:20) last pick:  900.00 50.00
+\t (00:29:20) Waiting for the destination pick.
+\i (00:29:28) pick grid 810.97 21.48
+\t (00:29:28) last pick:  800.00 25.00
+\t (00:29:28) No DRC errors detected.
+\t (00:29:28) Pick another element to slide.
+\i (00:29:29) pick grid 577.37 -167.09
+\t (00:29:29) last pick:  575.00 -175.00
+\t (00:29:29) last pick:  577.37 -175.00
+\t (00:29:29) Waiting for the destination pick.
+\i (00:29:31) pick grid 599.88 -265.60
+\t (00:29:31) last pick:  600.00 -275.00
+\t (00:29:31) No DRC errors detected.
+\t (00:29:31) Pick another element to slide.
+\i (00:29:33) pick grid 419.75 -127.69
+\t (00:29:33) last pick:  425.00 -125.00
+\t (00:29:33) last pick:  419.75 -125.00
+\t (00:29:33) Waiting for the destination pick.
+\i (00:29:34) pick grid 445.08 -161.47
+\t (00:29:34) last pick:  450.00 -150.00
+\t (00:29:34) No DRC errors detected.
+\t (00:29:34) Pick another element to slide.
+\i (00:29:35) pick grid 532.33 -122.06
+\t (00:29:35) last pick:  525.00 -125.00
+\t (00:29:35) last pick:  530.12 -119.88
+\t (00:29:35) Waiting for the destination pick.
+\i (00:29:36) pick grid 560.48 -136.13
+\t (00:29:36) last pick:  550.00 -125.00
+\t (00:29:36) No DRC errors detected.
+\t (00:29:36) Pick another element to slide.
+\i (00:29:37) pick grid 484.49 -68.59
+\t (00:29:37) last pick:  475.00 -75.00
+\t (00:29:37) last pick:  475.00 -50.00
+\t (00:29:37) Waiting for the destination pick.
+\i (00:29:38) pick grid 411.31 -71.40
+\t (00:29:38) last pick:  400.00 -75.00
+\t (00:29:38) No DRC errors detected.
+\t (00:29:38) Pick another element to slide.
+\i (00:29:39) pick grid 492.93 -321.89
+\t (00:29:39) last pick:  500.00 -325.00
+\t (00:29:39) last pick:  475.00 -350.00
+\t (00:29:39) Waiting for the destination pick.
+\i (00:29:41) pick grid 411.31 -324.71
+\t (00:29:41) last pick:  400.00 -325.00
+\t (00:29:41) No DRC errors detected.
+\t (00:29:41) Pick another element to slide.
+\i (00:29:41) pick grid 476.04 -175.54
+\t (00:29:41) last pick:  475.00 -175.00
+\t (00:29:41) last pick:  475.00 -175.54
+\t (00:29:41) Waiting for the destination pick.
+\i (00:29:42) pick grid 408.49 -172.72
+\t (00:29:42) last pick:  400.00 -175.00
+\t (00:29:42) No DRC errors detected.
+\t (00:29:42) Pick another element to slide.
+\i (00:29:42) pick grid 636.47 -198.05
+\t (00:29:42) last pick:  625.00 -200.00
+\t (00:29:42) Pick element to slide.
+\i (00:29:46) add connect 
+\t (00:29:46) Pick first element.
+\i (00:29:47) pick grid 661.80 -243.09
+\t (00:29:47) last pick:  650.00 -250.00
+\t (00:29:47) Target Symbol Pin is defined from TOP to BOTTOM.
+\t (00:29:47) last pick:  650.00 -250.00
+\i (00:29:47) prepopup 661.80 -243.09
+\i (00:29:48) pop bbdrill 
+\t (00:29:48) TOP-BOTTOM used for drill.
+\t (00:29:48) No DRC errors detected.
+\i (00:29:48) mouse_pos 968.59 -670.90
+\i (00:29:48) mouse_pos 864.45 -471.06
+\i (00:29:51) pick grid 960.14 -32.00
+\t (00:29:51) last pick:  950.00 -25.00
+\t (00:29:51) No DRC errors detected.
+\i (00:29:53) pick grid 906.67 139.69
+\t (00:29:53) last pick:  900.00 150.00
+\t (00:29:53) No DRC errors detected.
+\i (00:29:59) pick grid 138.30 350.78
+\t (00:29:59) last pick:  150.00 350.00
+\t (00:29:59) No DRC errors detected.
+\i (00:29:59) prepopup 146.74 353.60
+\i (00:30:00) pop bbdrill 
+\t (00:30:00) TOP-BOTTOM used for drill.
+\t (00:30:00) No DRC errors detected.
+\i (00:30:02) mouse_pos -115.01 311.38
+\i (00:30:03) pick grid -115.01 311.38
+\t (00:30:03) last pick:  -125.00 300.00
+\t (00:30:03) No DRC errors detected.
+\t (00:30:03) Pick first element.
+\i (00:30:03) prepopup -123.45 288.86
+\i (00:30:03) done 
+\i (00:30:03) generaledit 
+\i (00:30:07) add connect 
+\t (00:30:08) Pick first element.
+\i (00:30:09) prepopup -748.28 364.85
+\i (00:30:12) pop dyn_option_select 'Change Active Layer@:@TOP' 
+\t (00:30:12) Pick first element.
+\i (00:30:13) pick grid -779.24 353.60
+\t (00:30:13) last pick:  -775.00 350.00
+\t (00:30:13) last pick:  -772.05 360.63
+\t (00:30:13) Target Symbol Pin is defined from TOP to BOTTOM.
+\t (00:30:13) last pick:  -772.05 360.63
+\i (00:30:19) pick grid -551.26 508.40
+\t (00:30:19) last pick:  -550.00 500.00
+\t (00:30:19) No DRC errors detected.
+\i (00:30:21) prepopup -540.01 511.21
+\i (00:30:22) pop bbdrill 
+\t (00:30:22) TOP-BOTTOM used for drill.
+\t (00:30:22) No DRC errors detected.
+\i (00:30:23) prepopup -517.49 494.32
+\i (00:30:25) pop dyn_option_select 'Change Active Layer@:@BOTTOM' 
+\i (00:30:26) pick grid -385.21 468.99
+\t (00:30:26) last pick:  -375.00 475.00
+\t (00:30:26) No DRC errors detected.
+\i (00:30:27) mouse_pos -238.85 488.69
+\i (00:30:28) pick grid -236.04 491.51
+\t (00:30:28) last pick:  -225.00 500.00
+\t (00:30:28) No DRC errors detected.
+\t (00:30:28) Pick first element.
+\i (00:30:28) prepopup -233.22 497.14
+\i (00:30:28) done 
+\i (00:30:28) generaledit 
+\i (00:30:30) slide 
+\t (00:30:30) Pick element to slide.
+\i (00:30:31) pick grid -267.00 446.48
+\t (00:30:31) last pick:  -275.00 450.00
+\t (00:30:31) last pick:  -267.00 439.37
+\t (00:30:31) Waiting for the destination pick.
+\i (00:30:34) pick grid -213.52 423.96
+\t (00:30:34) last pick:  -225.00 425.00
+\t (00:30:34) No DRC errors detected.
+\t (00:30:34) Pick another element to slide.
+\i (00:30:36) drag_start grid 188.96 347.97
+\i (00:30:36) drag_stop 214.29 325.45
+\t (00:30:36) last pick:  150.00 350.00
+\t (00:30:36) Waiting for the destination pick.
+\i (00:30:37) pick grid 172.07 336.71
+\t (00:30:37) last pick:  175.00 325.00
+\t (00:30:37) No DRC errors detected.
+\t (00:30:37) Pick another element to slide.
+\i (00:30:38) pick grid 219.92 145.32
+\t (00:30:38) last pick:  225.00 150.00
+\t (00:30:38) Pick element to slide.
+\i (00:30:40) add connect 
+\t (00:30:40) Pick first element.
+\i (00:30:42) pick grid -30.57 243.83
+\t (00:30:42) last pick:  -25.00 250.00
+\t (00:30:42) last pick:  -25.00 250.00
+\i (00:30:43) pick grid 84.82 167.84
+\t (00:30:43) last pick:  75.00 175.00
+\t (00:30:43) No DRC errors detected.
+\i (00:30:43) mouse_pos 76.38 176.28
+\i (00:30:43) mouse_pos 104.52 176.28
+\i (00:30:44) mouse_pos 352.20 187.54
+\i (00:30:45) mouse_pos 338.13 184.72
+\i (00:30:45) pick grid 335.32 184.72
+\t (00:30:45) last pick:  325.00 175.00
+\t (00:30:45) No DRC errors detected.
+\t (00:30:45) last pick:  325.00 165.00
+\i (00:30:45) mouse_pos 343.76 187.54
+\i (00:30:46) pick grid 388.79 221.31
+\t (00:30:46) last pick:  400.00 225.00
+\t (00:30:46) No DRC errors detected.
+\t (00:30:46) Pick first element.
+\i (00:30:46) prepopup 205.85 210.05
+\i (00:30:46) done 
+\i (00:30:47) generaledit 
+\i (00:30:48) add connect 
+\t (00:30:48) Pick first element.
+\i (00:30:48) pick grid 124.23 176.28
+\t (00:30:49) last pick:  125.00 175.00
+\t (00:30:49) last pick:  125.00 165.00
+\t (00:30:49) last pick:  125.00 165.00
+\i (00:30:49) mouse_pos 67.93 179.09
+\i (00:30:49) mouse_pos 42.60 184.72
+\i (00:30:49) mouse_pos 28.53 190.35
+\i (00:30:49) pick grid -39.02 263.53
+\t (00:30:49) last pick:  -50.00 275.00
+\t (00:30:49) No DRC errors detected.
+\t (00:30:49) Pick first element.
+\i (00:30:50) prepopup 172.07 243.83
+\i (00:30:50) pick grid 104.52 235.38
+\t (00:30:50) last pick:  100.00 225.00
+\t (00:30:50) Pick first element.
+\t (00:30:50) last pick:  100.00 225.00
+\i (00:30:50) mouse_pos 53.86 224.13
+\i (00:30:50) mouse_pos 11.64 224.13
+\i (00:30:51) pick grid -22.13 238.20
+\t (00:30:51) last pick:  -25.00 250.00
+\t (00:30:51) No DRC errors detected.
+\t (00:30:51) Pick first element.
+\i (00:30:51) prepopup 17.27 241.01
+\i (00:30:52) cancel 
+\i (00:30:52) generaledit 
+\i (00:30:53) add connect 
+\t (00:30:53) Pick first element.
+\i (00:30:54) pick grid -19.32 241.01
+\t (00:30:54) last pick:  -25.00 250.00
+\t (00:30:54) last pick:  -25.00 250.00
+\i (00:30:54) mouse_pos -13.69 210.05
+\i (00:30:54) mouse_pos 3.20 184.72
+\i (00:30:54) mouse_pos 82.01 139.69
+\i (00:30:54) mouse_pos 73.56 165.02
+\i (00:30:55) mouse_pos 45.42 190.35
+\i (00:30:55) mouse_pos -2.43 263.53
+\i (00:30:55) mouse_pos 14.46 266.34
+\i (00:30:55) mouse_pos 39.79 263.53
+\i (00:30:56) mouse_pos 84.82 210.05
+\i (00:30:56) mouse_pos 87.64 210.05
+\i (00:30:56) mouse_pos 104.52 184.72
+\i (00:30:57) pick grid 112.97 173.46
+\t (00:30:57) last pick:  125.00 175.00
+\t (00:30:57) No DRC errors detected.
+\t (00:30:57) Pick first element.
+\i (00:30:58) prepopup 321.24 91.84
+\i (00:30:58) done 
+\i (00:30:58) generaledit 
+\i (00:30:59) add connect 
+\t (00:30:59) Pick first element.
+\i (00:31:00) pick grid 267.77 173.46
+\t (00:31:00) last pick:  275.00 175.00
+\t (00:31:00) last pick:  275.00 165.00
+\t (00:31:00) last pick:  275.00 165.00
+\i (00:31:00) mouse_pos 290.28 238.20
+\i (00:31:01) mouse_pos 287.47 241.01
+\i (00:31:01) mouse_pos 343.76 235.38
+\i (00:31:01) mouse_pos 355.02 238.20
+\i (00:31:02) mouse_pos 287.47 235.38
+\i (00:31:02) mouse_pos 293.10 243.83
+\i (00:31:03) mouse_pos 338.13 215.68
+\i (00:31:03) mouse_pos 391.61 184.72
+\i (00:31:03) mouse_pos 335.32 153.76
+\i (00:31:03) mouse_pos 284.65 153.76
+\i (00:31:04) mouse_pos 312.80 179.09
+\i (00:31:04) mouse_pos 338.13 181.91
+\i (00:31:04) mouse_pos 349.39 187.54
+\i (00:31:04) mouse_pos 388.79 193.17
+\i (00:31:04) pick grid 408.49 212.87
+\t (00:31:04) last pick:  400.00 225.00
+\t (00:31:04) No DRC errors detected.
+\t (00:31:04) Pick first element.
+\i (00:31:05) prepopup 349.39 66.51
+\i (00:31:06) done 
+\i (00:31:06) generaledit 
+\i (00:31:06) pick grid 318.43 190.35
+\t (00:31:06) last pick:  325.00 200.00
+\i (00:31:07) pick grid 338.13 193.17
+\t (00:31:07) last pick:  350.00 200.00
+\i (00:31:07) pick grid 324.06 195.98
+\t (00:31:07) last pick:  325.00 200.00
+\i (00:31:08) pick grid 312.80 173.46
+\t (00:31:08) last pick:  325.00 175.00
+\i (00:31:08) pick grid 276.21 150.95
+\t (00:31:08) last pick:  275.00 150.00
+\i (00:31:09) prepopup 287.47 162.21
+\i (00:31:10) pop dyn_option_select @:@Delete 
+\i (00:31:10) delete 
+\i (00:31:10) generaledit 
+\i (00:31:10) pick grid 321.24 165.02
+\t (00:31:10) last pick:  325.00 175.00
+\i (00:31:11) prepopup 318.43 167.84
+\i (00:31:11) pop dyn_option_select @:@Delete 
+\i (00:31:11) delete 
+\i (00:31:11) generaledit 
+\i (00:31:12) pick grid 321.24 52.44
+\t (00:31:12) last pick:  325.00 50.00
+\i (00:31:14) slide 
+\t (00:31:14) Pick element to slide.
+\i (00:31:15) pick grid 332.50 176.28
+\t (00:31:15) last pick:  325.00 175.00
+\t (00:31:15) last pick:  328.10 171.90
+\t (00:31:15) Waiting for the destination pick.
+\i (00:31:16) pick grid 239.62 159.39
+\t (00:31:16) last pick:  250.00 150.00
+\t (00:31:16) No DRC errors detected.
+\t (00:31:16) Pick another element to slide.
+\i (00:31:16) pick grid 295.91 77.77
+\t (00:31:16) last pick:  300.00 75.00
+\t (00:31:16) Pick element to slide.
+\i (00:31:17) prepopup 295.91 74.96
+\i (00:31:17) done 
+\i (00:31:17) generaledit 
+\i (00:31:21) setwindow form.find
+\i (00:31:21) FORM find all_off  
+\i (00:31:21) FORM find fingers YES 
+\i (00:31:21) FORM find clines YES 
+\i (00:31:22) FORM find fingers NO 
+\i (00:31:23) setwindow pcb
+\i (00:31:23) pick grid 343.76 212.87
+\t (00:31:23) last pick:  350.00 225.00
+\i (00:31:23) prepopup 343.76 212.87
+\i (00:31:24) pop dyn_option_select @:@Delete 
+\i (00:31:24) delete 
+\i (00:31:24) generaledit 
+\i (00:31:25) add connect 
+\t (00:31:25) Pick first element.
+\i (00:31:26) pick grid 17.27 249.46
+\t (00:31:26) last pick:  25.00 250.00
+\t (00:31:26) last pick:  -25.00 250.00
+\t (00:31:26) Target Symbol Pin is defined from TOP to BOTTOM.
+\t (00:31:26) last pick:  -25.00 250.00
+\i (00:31:27) pick grid 96.08 184.72
+\t (00:31:27) last pick:  100.00 175.00
+\t (00:31:27) No DRC errors detected.
+\i (00:31:29) pick grid 335.32 179.09
+\t (00:31:29) last pick:  325.00 175.00
+\t (00:31:29) No DRC errors detected.
+\i (00:31:29) mouse_pos 338.13 204.42
+\i (00:31:29) pick grid 391.61 249.46
+\t (00:31:29) last pick:  400.00 250.00
+\t (00:31:29) No DRC errors detected.
+\t (00:31:29) Pick first element.
+\i (00:31:30) prepopup 360.65 86.21
+\i (00:31:30) done 
+\i (00:31:30) generaledit 
+\i (00:31:33) save 
+\i (00:31:35) fillin yes 
+   (00:31:35) Loading consmgr.cxt 
+   (00:31:35) Loading acns_formula.cxt 
+\i (00:31:35) generaledit 
+\i (00:31:36) zoom in 1 
+\i (00:31:36) setwindow pcb
+\i (00:31:36) zoom in 1190.94 -203.68
+\i (00:31:36) trapsize 704
+\i (00:31:36) zoom out 1 
+\i (00:31:36) setwindow pcb
+\i (00:31:36) zoom out 1179.68 -210.72
+\i (00:31:36) trapsize 1407
+\i (00:31:38) zoom in 1 
+\i (00:31:38) setwindow pcb
+\i (00:31:38) zoom in -776.43 -117.84
+\i (00:31:38) trapsize 704
+\i (00:31:39) zoom out 1 
+\i (00:31:39) setwindow pcb
+\i (00:31:39) zoom out 350.80 -191.02
+\i (00:31:39) trapsize 1407
+\i (00:31:40) zoom out 1 
+\i (00:31:40) setwindow pcb
+\i (00:31:40) zoom out 933.41 -81.25
+\i (00:31:40) trapsize 2815
+\i (00:31:40) zoom in 1 
+\i (00:31:40) setwindow pcb
+\i (00:31:40) zoom in 1615.17 98.89
+\i (00:31:40) trapsize 1407
+\i (00:31:41) zoom in 1 
+\i (00:31:41) setwindow pcb
+\i (00:31:41) zoom in 784.88 -309.22
+\i (00:31:41) trapsize 704
+\i (00:31:42) zoom out 1 
+\i (00:31:42) setwindow pcb
+\i (00:31:42) zoom out 469.66 44.01
+\i (00:31:42) trapsize 1407
+\i (00:31:43) zoom in 1 
+\i (00:31:43) setwindow pcb
+\i (00:31:43) zoom in 55.92 345.17
+\i (00:31:43) trapsize 704
+\i (00:31:43) zoom in 1 
+\i (00:31:43) setwindow pcb
+\i (00:31:43) zoom in 55.92 345.17
+\i (00:31:43) trapsize 352
+\i (00:31:46) zoom out 1 
+\i (00:31:47) setwindow pcb
+\i (00:31:47) zoom out 301.49 102.42
+\i (00:31:47) trapsize 704
+\i (00:31:47) zoom out 1 
+\i (00:31:47) setwindow pcb
+\i (00:31:47) zoom out 301.50 102.41
+\i (00:31:47) trapsize 1407
+\i (00:31:48) zoom in 1 
+\i (00:31:48) setwindow pcb
+\i (00:31:48) zoom in 867.21 147.44
+\i (00:31:48) trapsize 704
+\i (00:31:48) zoom in 1 
+\i (00:31:48) setwindow pcb
+\i (00:31:48) zoom in 954.47 131.97
+\i (00:31:48) trapsize 352
+\i (00:31:49) zoom in 1 
+\i (00:31:49) setwindow pcb
+\i (00:31:49) zoom in 915.06 160.82
+\i (00:31:49) trapsize 176
+\i (00:31:49) zoom out 1 
+\i (00:31:49) setwindow pcb
+\i (00:31:49) zoom out 887.63 152.38
+\i (00:31:49) trapsize 352
+\i (00:31:50) zoom out 1 
+\i (00:31:50) setwindow pcb
+\i (00:31:50) zoom out 887.62 151.68
+\i (00:31:50) trapsize 704
+\i (00:31:50) zoom out 1 
+\i (00:31:50) setwindow pcb
+\i (00:31:50) zoom out 129.10 362.77
+\i (00:31:50) trapsize 1407
+\i (00:31:50) zoom out 1 
+\i (00:31:50) setwindow pcb
+\i (00:31:50) zoom out 129.11 362.78
+\i (00:31:50) trapsize 2815
+\i (00:31:51) zoom in 1 
+\i (00:31:51) setwindow pcb
+\i (00:31:51) zoom in -1108.55 542.91
+\i (00:31:51) trapsize 1407
+\i (00:31:51) zoom in 1 
+\i (00:31:51) setwindow pcb
+\i (00:31:51) zoom in -1108.55 542.91
+\i (00:31:51) trapsize 704
+\i (00:31:51) zoom in 1 
+\i (00:31:51) setwindow pcb
+\i (00:31:51) zoom in -373.95 576.69
+\i (00:31:51) trapsize 352
+\i (00:31:52) zoom out 1 
+\i (00:31:53) setwindow pcb
+\i (00:31:53) zoom out -493.57 542.21
+\i (00:31:53) trapsize 704
+\i (00:31:53) zoom out 1 
+\i (00:31:53) setwindow pcb
+\i (00:31:53) zoom out -514.68 356.45
+\i (00:31:53) trapsize 1407
+\i (00:31:53) zoom out 1 
+\i (00:31:53) setwindow pcb
+\i (00:31:53) zoom out -514.67 356.46
+\i (00:31:53) trapsize 2815
+\i (00:32:18) zoom in 1 
+\i (00:32:18) setwindow pcb
+\i (00:32:18) zoom in 2513.78 -544.19
+\i (00:32:18) trapsize 1407
+\i (00:32:20) slide 
+\t (00:32:20) Pick element to slide.
+\i (00:32:23) pick grid 1092.44 -60.09
+\t (00:32:23) last pick:  1100.00 -50.00
+\t (00:32:23) Pick element to slide.
+\i (00:32:24) pick grid dbl 1092.44 -60.09
+\t (00:32:24) last pick:  1100.00 -50.00
+\t (00:32:24) Pick element to slide.
+\i (00:32:24) prepopup 1556.84 -136.08
+\i (00:32:25) done 
+\i (00:32:25) generaledit 
+\i (00:32:25) pick grid 1463.96 210.11
+\t (00:32:25) last pick:  1475.00 200.00
+\i (00:32:26) zoom out 1 
+\i (00:32:26) setwindow pcb
+\i (00:32:26) zoom out 875.72 671.69
+\i (00:32:26) trapsize 2815
+\i (00:32:27) zoom in 1 
+\i (00:32:27) setwindow pcb
+\i (00:32:27) zoom in -714.51 677.33
+\i (00:32:27) trapsize 1407
+\i (00:32:29) setwindow form.find
+\i (00:32:29) FORM find shapes YES 
+\i (00:32:30) setwindow pcb
+\i (00:32:30) pick grid 977.03 806.80
+\t (00:32:30) last pick:  975.00 800.00
+\i (00:32:30) prepopup 977.03 806.80
+\i (00:32:31) pop dyn_option_select @:@Delete 
+\i (00:32:31) delete 
+\i (00:32:31) generaledit 
+\i (00:32:35) shape add rect 
+\i (00:32:36) pick grid -1297.12 775.84
+\t (00:32:36) last pick:  -1300.00 775.00
+\i (00:32:40) setwindow form.mini
+\i (00:32:40) FORM mini class BOARD GEOMETRY 
+\i (00:32:41) FORM mini subclass DESIGN_OUTLINE 
+\i (00:32:48) setwindow pcb
+\i (00:32:48) pick grid 1151.53 -777.79
+\t (00:32:48) last pick:  1200.00 -800.00
+\i (00:32:48) prepopup 1368.25 125.68
+\i (00:32:57) setwindow form.mini
+\i (00:32:57) FORM mini class BOARD GEOMETRY 
+\i (00:32:59) setwindow pcb
+\i (00:32:59) pick grid 985.47 508.46
+\t (00:32:59) last pick:  1000.00 500.00
+\i (00:32:59) prepopup 985.47 508.46
+\i (00:33:00) cancel 
+\i (00:33:00) generaledit 
+\i (00:33:01) prepopup 1182.49 564.75
+\i (00:33:01) pick grid 1233.15 778.65
+\t (00:33:01) last pick:  1200.00 800.00
+\i (00:33:02) pick grid 1095.24 632.30
+\t (00:33:02) last pick:  1100.00 600.00
+\i (00:33:03) setwindow form.find
+\i (00:33:03) FORM find shapes NO 
+\i (00:33:04) FORM find shapes YES 
+\i (00:33:04) setwindow pcb
+\i (00:33:04) pick grid 1176.86 635.11
+\t (00:33:04) last pick:  1200.00 600.00
+\i (00:33:05) prepopup 1176.86 635.11
+\i (00:33:05) pick grid 1098.05 744.88
+\t (00:33:05) last pick:  1100.00 700.00
+\i (00:33:05) pick grid 1100.87 789.91
+\t (00:33:06) last pick:  1100.00 800.00
+\i (00:33:06) pick grid 1081.16 761.77
+\t (00:33:06) last pick:  1100.00 800.00
+\i (00:33:06) prepopup 1081.16 761.77
+\i (00:33:07) pop dyn_option_select @:@Delete 
+\i (00:33:07) delete 
+\i (00:33:07) generaledit 
+\i (00:33:07) pick grid 1475.20 556.30
+\t (00:33:07) last pick:  1500.00 600.00
+\i (00:33:12) shape add rect 
+\i (00:33:15) pick grid -1294.31 789.91
+\t (00:33:15) last pick:  -1300.00 800.00
+\i (00:33:20) pick grid 1213.45 -848.15
+\t (00:33:20) last pick:  1200.00 -800.00
+\i (00:33:21) prepopup 1182.49 -214.88
+\i (00:33:22) done 
+\i (00:33:22) generaledit 
+\i (00:33:22) pick grid 1596.22 187.60
+\t (00:33:22) last pick:  1600.00 200.00
+\i (00:33:25) zoom in 1 
+\i (00:33:25) setwindow pcb
+\i (00:33:25) zoom in -559.71 516.90
+\i (00:33:25) trapsize 704
+\i (00:33:25) zoom in 1 
+\i (00:33:25) setwindow pcb
+\i (00:33:25) zoom in -507.64 473.28
+\i (00:33:25) trapsize 352
+\i (00:33:25) zoom in 1 
+\i (00:33:25) setwindow pcb
+\i (00:33:25) zoom in -504.12 474.69
+\i (00:33:25) trapsize 176
+\i (00:33:26) zoom out 1 
+\i (00:33:26) setwindow pcb
+\i (00:33:26) zoom out -530.51 454.99
+\i (00:33:26) trapsize 352
+\i (00:33:26) zoom out 1 
+\i (00:33:26) setwindow pcb
+\i (00:33:26) zoom out -530.50 453.59
+\i (00:33:26) trapsize 704
+\i (00:33:26) zoom out 1 
+\i (00:33:26) setwindow pcb
+\i (00:33:26) zoom out -529.10 453.59
+\i (00:33:26) trapsize 1407
+\i (00:33:27) zoom in 1 
+\i (00:33:27) setwindow pcb
+\i (00:33:27) zoom in -743.00 -165.60
+\i (00:33:27) trapsize 704
+\i (00:33:27) zoom in 1 
+\i (00:33:27) setwindow pcb
+\i (00:33:27) zoom in -743.00 -165.60
+\i (00:33:27) trapsize 352
+\i (00:33:27) zoom out 1 
+\i (00:33:27) setwindow pcb
+\i (00:33:27) zoom out -740.88 -166.30
+\i (00:33:27) trapsize 704
+\i (00:33:27) zoom out 1 
+\i (00:33:27) setwindow pcb
+\i (00:33:27) zoom out -740.89 -166.30
+\i (00:33:27) trapsize 1407
+\i (00:33:28) zoom in 1 
+\i (00:33:28) setwindow pcb
+\i (00:33:28) zoom in 353.97 30.71
+\i (00:33:28) trapsize 704
+\i (00:33:29) zoom out 1 
+\i (00:33:29) setwindow pcb
+\i (00:33:29) zoom out 230.13 44.79
+\i (00:33:29) trapsize 1407
+\i (00:33:29) zoom out 1 
+\i (00:33:29) setwindow pcb
+\i (00:33:29) zoom out 232.94 39.16
+\i (00:33:29) trapsize 2815
+\i (00:33:29) zoom in 1 
+\i (00:33:29) setwindow pcb
+\i (00:33:29) zoom in -611.42 -124.09
+\i (00:33:29) trapsize 1407
+\i (00:33:29) zoom in 1 
+\i (00:33:30) setwindow pcb
+\i (00:33:30) zoom in -611.42 -124.09
+\i (00:33:30) trapsize 704
+\i (00:33:30) zoom out 1 
+\i (00:33:30) setwindow pcb
+\i (00:33:30) zoom out -595.93 -129.72
+\i (00:33:30) trapsize 1407
+\i (00:33:31) zoom in 1 
+\i (00:33:31) setwindow pcb
+\i (00:33:31) zoom in -342.63 -256.37
+\i (00:33:31) trapsize 704
+\i (00:33:32) zoom out 1 
+\i (00:33:32) setwindow pcb
+\i (00:33:32) zoom out -525.58 -259.18
+\i (00:33:32) trapsize 1407
+\i (00:33:33) zoom in 1 
+\i (00:33:33) setwindow pcb
+\i (00:33:33) zoom in -139.98 -309.84
+\i (00:33:33) trapsize 704
+\i (00:33:34) zoom in 1 
+\i (00:33:34) setwindow pcb
+\i (00:33:34) zoom in -83.69 61.68
+\i (00:33:34) trapsize 352
+\i (00:33:35) zoom out 1 
+\i (00:33:35) setwindow pcb
+\i (00:33:35) zoom out -111.13 3.28
+\i (00:33:35) trapsize 704
+\i (00:33:35) zoom out 1 
+\i (00:33:35) setwindow pcb
+\i (00:33:35) zoom out -111.12 3.29
+\i (00:33:35) trapsize 1407
+\i (00:33:36) zoom in 1 
+\i (00:33:36) setwindow pcb
+\i (00:33:36) zoom in -403.84 -44.56
+\i (00:33:36) trapsize 704
+\i (00:33:47) zoom out 1 
+\i (00:33:47) setwindow pcb
+\i (00:33:47) zoom out -578.34 -159.95
+\i (00:33:47) trapsize 1407
+\i (00:33:47) zoom out 1 
+\i (00:33:47) setwindow pcb
+\i (00:33:47) zoom out -578.34 -159.96
+\i (00:33:47) trapsize 2815
+\i (00:33:47) zoom out 1 
+\i (00:33:47) setwindow pcb
+\i (00:33:47) zoom out -810.21 -159.95
+\i (00:33:47) trapsize 5629
+\i (00:33:47) zoom out 1 
+\i (00:33:47) setwindow pcb
+\i (00:33:47) zoom out -839.07 -895.03
+\i (00:33:47) trapsize 5629
+\i (00:33:47) zoom in 1 
+\i (00:33:47) setwindow pcb
+\i (00:33:47) zoom in -535.10 -827.48
+\i (00:33:47) trapsize 2815
+\i (00:33:47) zoom in 1 
+\i (00:33:47) setwindow pcb
+\i (00:33:47) zoom in -658.28 -827.48
+\i (00:33:47) trapsize 1407
+\i (00:33:48) zoom out 1 
+\i (00:33:48) setwindow pcb
+\i (00:33:48) zoom out -979.14 -548.84
+\i (00:33:48) trapsize 2815
+\i (00:33:48) zoom out 1 
+\i (00:33:48) setwindow pcb
+\i (00:33:48) zoom out -1300.00 -548.84
+\i (00:33:48) trapsize 5629
+\i (00:33:49) zoom in 1 
+\i (00:33:49) setwindow pcb
+\i (00:33:49) zoom in -2223.84 1075.17
+\i (00:33:49) trapsize 2815
+\i (00:33:50) save 
+\i (00:33:51) fillin yes 
+\i (00:33:51) generaledit 
+\i (00:33:52) exit 
+\t (00:33:52)     Journal end - Fri Mar 16 16:14:43 2018

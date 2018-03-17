@@ -1,0 +1,45 @@
+FILE_TYPE=LIBRARY_PARTS;
+{ Using PSTWRITER 17.2.0 d001Mar-15-2018 at 14:25:22}
+primitive '4 HEADER_USB-A_4 HEADER';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    '3':
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
+    '4':
+      PIN_NUMBER='(4)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='4 HEADER';
+    JEDEC_TYPE='USB-A';
+    VALUE='4 HEADER';
+  end_body;
+end_primitive;
+primitive '4 HEADER_GU-MOLEX4_4 HEADER';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    '3':
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
+    '4':
+      PIN_NUMBER='(4)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='4 HEADER';
+    JEDEC_TYPE='gu-molex4';
+    VALUE='4 HEADER';
+  end_body;
+end_primitive;
+END.

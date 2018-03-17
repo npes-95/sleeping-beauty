@@ -1,0 +1,30 @@
+FILE_TYPE = EXPANDEDPARTLIST;
+{ Using PSTWRITER 17.2.0 d001Mar-15-2018 at 14:25:10 }
+DIRECTIVES
+ PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
+ ROOT_DRAWING='ACCELEROMETER';
+ POST_TIME='Jan  9 2017 17:57:56';
+ SOURCE_TOOL='CAPTURE_WRITER';
+END_DIRECTIVES;
+
+PART_NAME
+ J1 '4 HEADER_USB-A_4 HEADER':;
+
+SECTION_NUMBER 1
+ '@ACCELEROMETER.SCHEMATIC1(SCH_1):INS57362@CONNECTOR.4 HEADER.NORMAL(CHIPS)':
+ C_PATH='@accelerometer.schematic1(sch_1):ins57362@connector.\4 header.normal\(chips)',
+ P_PATH='@accelerometer.schematic1(sch_1):page1_ins57362@connector.\4 header.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J2 '4 HEADER_GU-MOLEX4_4 HEADER':;
+
+SECTION_NUMBER 1
+ '@ACCELEROMETER.SCHEMATIC1(SCH_1):INS57455@CONNECTOR.4 HEADER.NORMAL(CHIPS)':
+ C_PATH='@accelerometer.schematic1(sch_1):ins57455@connector.\4 header.normal\(chips)',
+ P_PATH='@accelerometer.schematic1(sch_1):page1_ins57455@connector.\4 header.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+END.

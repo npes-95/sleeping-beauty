@@ -1,0 +1,376 @@
+\t (00:00:05) allegro 17.2 S013 Windows SPB 64-bit Edition
+\t (00:00:05)     Journal start - Fri Mar 16 16:23:58 2018
+\t (00:00:05)         Host=RANK329-03 User=2064224z Pid=15192 CPUs=8
+\t (00:00:05) CmdLine= c:\cadence\spb_17.2\tools\bin\allegro.exe H:\Desktop\Schematic & PCB\Schematic\Pressure Sensors\PCB\Pressure_v1.0.brd
+\t (00:00:05) 
+   (00:00:05) Loading axlcore.cxt 
+\t (00:00:06) Opening existing design...
+\d (00:00:06) Design opened: H:/Desktop/Schematic & PCB/Schematic/Pressure Sensors/PCB/Pressure_v1.0.brd
+\i (00:00:06) trapsize 2752
+\i (00:00:06) trapsize 2815
+\i (00:00:06) trapsize 2815
+\i (00:00:07) generaledit 
+\i (00:00:07) zoom in 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom in -135.43 -112.58
+\i (00:00:07) trapsize 1407
+\i (00:00:07) zoom in 1 
+\i (00:00:07) setwindow pcb
+\i (00:00:07) zoom in -172.02 -123.83
+\i (00:00:07) trapsize 704
+\i (00:00:08) zoom out 1 
+\i (00:00:08) setwindow pcb
+\i (00:00:08) zoom out -177.64 -132.27
+\i (00:00:08) trapsize 1407
+\i (00:00:08) zoom out 1 
+\i (00:00:08) setwindow pcb
+\i (00:00:08) zoom out -177.64 -132.28
+\i (00:00:08) trapsize 2815
+\i (00:00:09) zoom in 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom in -301.49 -239.23
+\i (00:00:09) trapsize 1407
+\i (00:00:19) save_as 
+\i (00:00:28) fillin "Pressure_v1.0_BL.brd"
+\i (00:00:28) generaledit 
+\i (00:00:30) color192 
+\i (00:00:30) generaledit 
+\i (00:00:32) QtSignal ColorVisibilityDialog CVDTabs currentChanged Nets
+\i (00:00:33) QtSignal ColorVisibilityDialog CVDTabs currentChanged Layers
+\i (00:00:34) QtSignal CVDLayerContainer CVDVisibilityRestore clicked
+\i (00:00:35) QtSignal CVDLayerContainer CVDVisibilityOff clicked
+\i (00:00:36) QtSignal ColorVisibilityDialog CVDTabs currentChanged Nets
+\i (00:00:37) QtSignal ColorVisibilityDialog CVDTabs currentChanged Layers
+\i (00:00:37) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Areas
+\i (00:00:38) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Stack-Up
+\i (00:00:39) QtSignal ColorVisibilityDialog CVDTabs currentChanged Display
+\i (00:00:40) QtSignal CVDColorTable CVDColorButton5:1 clicked
+\i (00:00:41) QtSignal CVDDisplayGroup CVDBackgroundButton clicked
+\i (00:00:42) QtSignal ColorVisibilityDialog CVDApplyButton clicked
+\i (00:00:44) QtSignal ColorVisibilityDialog CVDTabs currentChanged Layers
+\i (00:00:47) QtSignal CVDColorTable CVDColorButton0:1 clicked
+\i (00:00:48) QtSignal CVDLayerTable CVDLayerTableDelegate clickedColor 0 0
+\i (00:00:48) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Top Pin
+\i (00:00:48) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
+\i (00:00:48) QtSignal CVDLayerTable CVDLayerTableDelegate clickedColor 0 1
+\i (00:00:48) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Top Via
+\i (00:00:48) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
+\i (00:00:49) QtSignal CVDLayerTable CVDLayerTableDelegate clickedColor 0 2
+\i (00:00:49) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Top Etch
+\i (00:00:49) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
+\i (00:00:55) QtSignal CVDLayerTable VertHeader clickedButton 4
+\i (00:00:55) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Pastemask_Top Pin
+\i (00:00:56) QtSignal CVDLayerTable VertHeader clickedButton 2
+\i (00:00:56) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Soldermask_Top Pin
+\i (00:00:57) QtSignal CVDLayerTable VertHeader clickedButton 6
+\i (00:00:57) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Filmmasktop Pin
+\i (00:01:00) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 6 0
+\i (00:01:00) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Filmmasktop Pin
+\i (00:01:00) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
+\i (00:01:01) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 6 1
+\i (00:01:01) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Filmmasktop Via
+\i (00:01:01) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
+\i (00:01:02) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 4 0
+\i (00:01:02) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Pastemask_Top Pin
+\i (00:01:02) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
+\i (00:01:02) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
+\i (00:01:02) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 4 1
+\i (00:01:02) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Pastemask_Top Via
+\i (00:01:02) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
+\i (00:01:03) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 2 1
+\i (00:01:03) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Soldermask_Top Via
+\i (00:01:03) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
+\i (00:01:03) QtSignal CVDLayerTable CVDLayerTableDelegate clickedBox 2 0
+\i (00:01:03) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Soldermask_Top Pin
+\i (00:01:04) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
+\i (00:01:06) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Components
+\i (00:01:06) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry
+\i (00:01:13) QtSignal CVDLayerTable CVDLayerTableDelegate clickedColor 8 1
+\i (00:01:13) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Design_Outline BrdGeo
+\i (00:01:13) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
+\i (00:01:18) QtSignal CVDLayerTable CVDLayerTableDelegate clickedColor 17 1
+\i (00:01:18) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Outline BrdGeo
+\i (00:01:18) QtSignal CVDLayerSplitter CVDLayerTable selectionChanged
+\i (00:01:21) QtSignal ColorVisibilityDialog CVDApplyButton clicked
+\i (00:01:22) QtSignal ColorVisibilityDialog CVDApplyButton clicked
+\i (00:01:32) setwindow form.mini
+\i (00:01:32) FORM mini class MANUFACTURING 
+\i (00:01:34) FORM mini class ETCH 
+\i (00:01:36) setwindow pcb
+\i (00:01:36) color192 
+\i (00:01:36) generaledit 
+\i (00:01:38) QtSignal CVDColorTable CVDColorButton5:1 clicked
+\i (00:01:39) QtSignal CVDLayerTable VertHeader clickedButton 6
+\i (00:01:39) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Filmmasktop Pin
+\i (00:01:40) QtSignal CVDLayerTable VertHeader clickedButton 4
+\i (00:01:40) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Pastemask_Top Pin
+\i (00:01:40) QtSignal CVDLayerTable VertHeader clickedButton 2
+\i (00:01:40) QtSignal CVDLayerSplitter CVDLayerTable dataChanged Soldermask_Top Pin
+\i (00:01:41) QtSignal ColorVisibilityDialog CVDApplyButton clicked
+\i (00:01:41) QtSignal ColorVisibilityDialog CVDApplyButton clicked
+\i (00:01:43) QtSignal ColorVisibilityDialog CVDOkButton clicked
+\i (00:01:50) setwindow form.mini
+\i (00:01:50) FORM mini class PIN 
+\i (00:01:53) FORM mini subclass FILMMASKTOP 
+\i (00:01:54) setwindow pcb
+\i (00:01:54) zoom in 1 
+\i (00:01:54) setwindow pcb
+\i (00:01:54) zoom in -397.18 -202.64
+\i (00:01:54) trapsize 704
+\i (00:01:54) zoom out 1 
+\i (00:01:54) setwindow pcb
+\i (00:01:54) zoom out -442.21 -198.42
+\i (00:01:54) trapsize 1407
+\i (00:01:55) zoom in 1 
+\i (00:01:55) setwindow pcb
+\i (00:01:55) zoom in -782.78 448.94
+\i (00:01:55) trapsize 704
+\i (00:01:55) zoom in 1 
+\i (00:01:55) setwindow pcb
+\i (00:01:55) zoom in -782.77 448.94
+\i (00:01:55) trapsize 352
+\i (00:01:56) zoom in 1 
+\i (00:01:56) setwindow pcb
+\i (00:01:56) zoom in -719.44 338.47
+\i (00:01:56) trapsize 176
+\i (00:01:56) zoom out 1 
+\i (00:01:56) setwindow pcb
+\i (00:01:56) zoom out -713.11 340.23
+\i (00:01:56) trapsize 352
+\i (00:01:56) zoom out 1 
+\i (00:01:56) setwindow pcb
+\i (00:01:56) zoom out -713.11 340.24
+\i (00:01:56) trapsize 704
+\i (00:01:57) zoom out 1 
+\i (00:01:57) setwindow pcb
+\i (00:01:57) zoom out -597.72 243.14
+\i (00:01:57) trapsize 1407
+\i (00:01:57) zoom out 1 
+\i (00:01:57) setwindow pcb
+\i (00:01:57) zoom out -395.07 96.78
+\i (00:01:57) trapsize 2815
+\i (00:01:58) zoom in 1 
+\i (00:01:58) setwindow pcb
+\i (00:01:58) zoom in -164.27 -353.55
+\i (00:01:58) trapsize 1407
+\i (00:02:05) zoom in 1 
+\i (00:02:05) setwindow pcb
+\i (00:02:05) zoom in -952.35 769.45
+\i (00:02:05) trapsize 704
+\i (00:02:06) zoom out 1 
+\i (00:02:06) setwindow pcb
+\i (00:02:06) zoom out -655.41 362.76
+\i (00:02:06) trapsize 1407
+\i (00:02:07) zoom out 1 
+\i (00:02:07) setwindow pcb
+\i (00:02:07) zoom out -706.07 75.67
+\i (00:02:07) trapsize 2815
+\i (00:02:09) zoom out 1 
+\i (00:02:09) setwindow pcb
+\i (00:02:09) zoom out -396.46 -363.40
+\i (00:02:09) trapsize 5629
+\i (00:02:09) zoom in 1 
+\i (00:02:09) setwindow pcb
+\i (00:02:09) zoom in -613.91 354.64
+\i (00:02:09) trapsize 2815
+\i (00:02:10) zoom in 1 
+\i (00:02:10) setwindow pcb
+\i (00:02:10) zoom in -973.51 506.63
+\i (00:02:10) trapsize 1407
+\i (00:02:11) zoom in 1 
+\i (00:02:11) setwindow pcb
+\i (00:02:11) zoom in -976.33 503.82
+\i (00:02:11) trapsize 704
+\i (00:02:16) zoom out 1 
+\i (00:02:16) setwindow pcb
+\i (00:02:16) zoom out -841.22 339.17
+\i (00:02:16) trapsize 1407
+\i (00:02:21) prepopup -1302.82 1380.55
+\i (00:02:22) pick grid -1595.53 1417.14
+\t (00:02:22) last pick:  -1600.00 1400.00
+\i (00:02:24) setwindow form.find
+\i (00:02:24) FORM find pins YES 
+\i (00:02:26) setwindow pcb
+\i (00:02:26) pick grid -776.49 516.48
+\t (00:02:26) last pick:  -800.00 500.00
+\i (00:02:27) pick grid tgl -751.16 434.86
+\t (00:02:27) last pick:  -800.00 400.00
+\i (00:02:28) pick grid tgl -751.16 350.42
+\t (00:02:28) last pick:  -800.00 400.00
+\i (00:02:28) pick grid tgl -756.79 263.17
+\t (00:02:28) last pick:  -800.00 300.00
+\i (00:02:29) prepopup -756.79 263.17
+\i (00:02:30) pop dyn_option_select 'Replace padstack@:@All instances' 
+\i (00:02:30) rep padstack 
+\i (00:02:38) fillin "gu.pad"
+\i (00:02:38) generaledit 
+\i (00:02:41) prepopup -779.31 446.12
+\i (00:02:42) pop dyn_option_select 'Replace padstack@:@All instances' 
+\i (00:02:42) rep padstack 
+\i (00:02:53) fillin "menu_cancel"
+\i (00:02:53) generaledit 
+\i (00:02:56) enved 
+\i (00:02:56) generaledit 
+\i (00:02:58) setwindow form.prfedit
+\i (00:02:58) FORM prfedit treelist  Editor Paths 
+\i (00:02:59) FORM prfedit treelist  Library Paths 
+\i (00:03:00) FORM prfedit padpath  
+\i (00:03:10) FORM prfedit psmpath  
+\i (00:03:19) FORM prfedit apply  
+\i (00:03:19) FORM prfedit done  
+\i (00:03:21) setwindow pcb
+\i (00:03:21) prepopup -782.12 457.37
+\i (00:03:23) pop dyn_option_select 'Replace padstack@:@All instances' 
+\i (00:03:23) rep padstack 
+\i (00:03:33) fillin "Gu-pad70ob35d"
+\t (00:03:33) Performing DRC...
+\t (00:03:33) Multithreaded DRC update (8 threads).
+\t (00:03:34) DRC done; 2 errors detected.
+\i (00:03:34) generaledit 
+\i (00:03:36) zoom in 1 
+\i (00:03:36) setwindow pcb
+\i (00:03:36) zoom in -742.72 212.51
+\i (00:03:36) trapsize 704
+\i (00:03:37) zoom out 1 
+\i (00:03:37) setwindow pcb
+\i (00:03:37) zoom out -1017.14 258.95
+\i (00:03:37) trapsize 1407
+\i (00:03:39) pick grid -851.08 655.80
+\t (00:03:39) last pick:  -900.00 700.00
+\i (00:03:41) pick grid tgl -856.71 118.22
+\t (00:03:41) last pick:  -900.00 100.00
+\i (00:03:45) pick grid -775.09 914.74
+\t (00:03:45) last pick:  -800.00 900.00
+\i (00:03:48) pick grid -761.01 453.15
+\t (00:03:48) last pick:  -800.00 500.00
+\i (00:03:49) pick grid tgl -763.83 517.89
+\t (00:03:49) last pick:  -800.00 500.00
+\i (00:03:50) pick grid tgl -761.01 250.50
+\t (00:03:50) last pick:  -800.00 300.00
+\i (00:03:51) prepopup -761.01 250.50
+\i (00:03:53) pop dyn_option_select 'Replace padstack@:@All instances' 
+\i (00:03:53) rep padstack 
+\i (00:04:04) fillin "Gu-pad70ob35d"
+\t (00:04:04) Performing DRC...
+\t (00:04:04) Multithreaded DRC update (8 threads).
+\t (00:04:05) DRC done; 2 errors detected.
+\i (00:04:05) generaledit 
+\i (00:04:07) pick grid -442.97 892.22
+\t (00:04:07) last pick:  -400.00 900.00
+\i (00:04:08) pick grid -772.27 365.90
+\t (00:04:08) last pick:  -800.00 400.00
+\i (00:04:09) pick grid tgl -769.46 425.01
+\t (00:04:09) last pick:  -800.00 400.00
+\i (00:04:09) pick grid tgl -772.27 506.63
+\t (00:04:09) last pick:  -800.00 500.00
+\i (00:04:10) pick grid tgl -763.83 256.13
+\t (00:04:10) last pick:  -800.00 300.00
+\i (00:04:10) prepopup -763.83 256.13
+\i (00:04:12) pop dyn_option_select 'Replace padstack@:@All instances' 
+\i (00:04:12) rep padstack 
+\i (00:04:18) fillin "Gu-pad50ob35d"
+\t (00:04:18) Performing DRC...
+\t (00:04:18) Multithreaded DRC update (8 threads).
+\t (00:04:19) No DRC errors detected.
+\i (00:04:19) generaledit 
+\i (00:04:20) pick grid -1619.46 588.25
+\t (00:04:20) last pick:  -1600.00 600.00
+\i (00:04:23) pick grid -896.11 636.10
+\t (00:04:23) last pick:  -900.00 600.00
+\i (00:04:25) pick grid -915.81 591.07
+\t (00:04:25) last pick:  -900.00 600.00
+\i (00:04:26) pick grid tgl -856.71 112.59
+\t (00:04:26) last pick:  -900.00 100.00
+\i (00:04:29) prepopup -896.11 627.66
+\i (00:04:32) pop dyn_option_select 'Replace padstack@:@All instances' 
+\i (00:04:32) rep padstack 
+\i (00:04:45) fillin "Gu-via80"
+\t (00:04:45) Performing DRC...
+\t (00:04:45) Multithreaded DRC update (8 threads).
+\t (00:04:46) No DRC errors detected.
+\i (00:04:46) generaledit 
+\i (00:04:47) pick grid -1636.34 591.07
+\t (00:04:47) last pick:  -1600.00 600.00
+\i (00:04:49) zoom out 1 
+\i (00:04:49) setwindow pcb
+\i (00:04:49) zoom out -1813.66 377.16
+\i (00:04:49) trapsize 2815
+\i (00:04:50) zoom in 1 
+\i (00:04:50) setwindow pcb
+\i (00:04:50) zoom in -2853.64 230.80
+\i (00:04:50) trapsize 1407
+\i (00:04:51) zoom out 1 
+\i (00:04:51) setwindow pcb
+\i (00:04:51) zoom out -2439.90 242.06
+\i (00:04:51) trapsize 2815
+\i (00:04:54) zoom in 1 
+\i (00:04:54) setwindow pcb
+\i (00:04:54) zoom in -2124.66 225.17
+\i (00:04:54) trapsize 1407
+\i (00:05:03) zoom out 1 
+\i (00:05:03) setwindow pcb
+\i (00:05:03) zoom out -554.13 188.59
+\i (00:05:03) trapsize 2815
+\i (00:05:03) zoom in 1 
+\i (00:05:03) setwindow pcb
+\i (00:05:03) zoom in -148.83 -143.54
+\i (00:05:03) trapsize 1407
+\i (00:05:07) pick grid -19.36 78.82
+\t (00:05:07) last pick:  0.00 100.00
+\i (00:05:07) prepopup -19.36 78.82
+\i (00:05:14) pop dyn_option_select '@:@Show element' 
+\i (00:05:14) show element 
+\i (00:05:14) generaledit 
+\i (00:05:16) setwindow text
+\i (00:05:16) close
+\i (00:05:17) pick grid -922.84 669.88
+\t (00:05:17) last pick:  -900.00 700.00
+\i (00:05:18) pick grid tgl -860.92 135.11
+\t (00:05:18) last pick:  -900.00 100.00
+\i (00:05:18) prepopup -860.92 135.11
+\i (00:05:20) pop dyn_option_select 'Replace padstack@:@All instances' 
+\i (00:05:20) rep padstack 
+\i (00:05:26) fillin "Gu-pad100sq47d"
+\t (00:05:26) Performing DRC...
+\t (00:05:26) Multithreaded DRC update (8 threads).
+\t (00:05:27) No DRC errors detected.
+\i (00:05:27) generaledit 
+\i (00:05:28) pick grid -134.76 1097.69
+\t (00:05:28) last pick:  -100.00 1100.00
+\i (00:05:31) zoom out 1 
+\i (00:05:31) setwindow pcb
+\i (00:05:31) zoom out 1137.42 67.56
+\i (00:05:31) trapsize 2815
+\i (00:05:31) zoom in 1 
+\i (00:05:31) setwindow pcb
+\i (00:05:31) zoom in 2121.86 11.27
+\i (00:05:31) trapsize 1407
+\i (00:05:32) zoom out 1 
+\i (00:05:32) setwindow pcb
+\i (00:05:32) zoom out 219.21 92.90
+\i (00:05:32) trapsize 2815
+\i (00:05:32) zoom in 1 
+\i (00:05:32) setwindow pcb
+\i (00:05:32) zoom in -34.10 14.09
+\i (00:05:32) trapsize 1407
+\i (00:05:36) plot setup 
+\i (00:05:41) setwindow form.fpfileplotsetup
+\i (00:05:41) FORM fpfileplotsetup fpplotblackwhite YES 
+\i (00:05:43) FORM fpfileplotsetup fpplotsheetcontents YES 
+\i (00:05:45) FORM fpfileplotsetup done  
+\i (00:05:45) setwindow pcb
+\i (00:05:45) generaledit 
+\i (00:05:49) plot 
+\i (00:06:13) plotwint initialize "PDFCreator"
+\i (00:06:13) plotwint orientation 1
+\i (00:06:13) plotwint papername "A4"
+\i (00:06:13) plotwint scale 100
+\i (00:06:13) plotwint copies 1
+\i (00:06:13) plotwint defaultsource 15
+\i (00:06:13) plotwint printquality 4000
+\i (00:06:13) plotwint color 2
+\i (00:06:13) plotwint execute
+\i (00:06:49) exit 
+\e (00:06:49) Do you want to save the changes you made to H:/Desktop/Schematic & PCB/Schematic/Pressure Sensors/PCB/Pressure_v1.0_BL.brd?
+\i (00:06:52) fillin yes 
+\t (00:06:52)     Journal end - Fri Mar 16 16:30:45 2018

@@ -1,0 +1,13 @@
+{ Using PSTWRITER 17.2.0 d001Mar-15-2018 at 14:36:11 }
+
+#1 WARNING(ORCAP-36006): Part Name "HEADER 2_GU-TERMINAL2-200_HEADER 2" is renamed to "HEADER 2_GU-TERMINAL2-200_HEADE".
+INFO(ORCAP-36080): Scanning netlist files ...
+
+Loading... H:\Desktop\Schematic & PCB\Schematic\Pressure Sensors\allegro/pstchip.dat
+
+Loading... H:\Desktop\Schematic & PCB\Schematic\Pressure Sensors\allegro/pstchip.dat
+
+Loading... H:\Desktop\Schematic & PCB\Schematic\Pressure Sensors\allegro/pstxprt.dat
+
+Loading... H:\Desktop\Schematic & PCB\Schematic\Pressure Sensors\allegro/pstxnet.dat
+packaging the design view...

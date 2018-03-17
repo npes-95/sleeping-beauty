@@ -1,0 +1,20 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Allegro Automatic B/B Via Creation                               )
+(                                                                     )
+(    Software Version : 17.2S013                                      )
+(    Date/Time        : Fri Mar 16 16:08:04 2018                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Via to be copied: Gu-via80
+Start subclass: TOP
+End subclass: TOP
+Old drawing: H:/Desktop/Schematic & PCB/Schematic/Pressure Sensors/PCB/#Taaaaae02596.tmp
+New drawing: H:/Desktop/Schematic & PCB/Schematic/Pressure Sensors/PCB/#Taaaaae02596.tmp
+Vias added to physical constraint set: DEFAULT
+
+*ERROR: Start and end layers cannot be the same.
+
+bbvia failed.

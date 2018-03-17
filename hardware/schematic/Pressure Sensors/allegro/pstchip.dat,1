@@ -1,0 +1,78 @@
+FILE_TYPE=LIBRARY_PARTS;
+{ Using PSTWRITER 17.2.0 d001Mar-15-2018 at 14:35:00}
+primitive '4 HEADER_USB-A_4 HEADER';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    '3':
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
+    '4':
+      PIN_NUMBER='(4)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='4 HEADER';
+    JEDEC_TYPE='USB-A';
+    VALUE='4 HEADER';
+  end_body;
+end_primitive;
+primitive 'HEADER 2_GU-TERMINAL2-200_HEADE';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='HEADER 2';
+    JEDEC_TYPE='gu-terminal2-200';
+    VALUE='HEADER 2';
+  end_body;
+end_primitive;
+primitive 'R_GU-RC300_100K';
+  pin
+    '2':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    '1':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='R';
+    JEDEC_TYPE='GU-RC300';
+    VALUE='100k';
+  end_body;
+end_primitive;
+primitive 'LF353_GU-DIPSOCK8_LF353';
+  pin
+    '+IN':
+      PIN_NUMBER='(3,5)';
+      INPUT_LOAD='(*)';
+    '-IN':
+      PIN_NUMBER='(2,6)';
+      INPUT_LOAD='(*)';
+    'OUT':
+      PIN_NUMBER='(1,7)';
+      OUTPUT_LOAD='(*)';
+    'V+':
+      PIN_NUMBER='(8,8)';
+      PINUSE='POWER';
+    'V-':
+      PIN_NUMBER='(4,4)';
+      PINUSE='POWER';
+  end_pin;
+  body
+    PART_NAME='LF353';
+    JEDEC_TYPE='gu-dipsock8';
+    VALUE='LF353';
+  end_body;
+end_primitive;
+END.

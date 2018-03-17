@@ -1,0 +1,16 @@
+#Allegro PCB Router v17-2-50 made 2017/01/16 at 14:16:53
+#Host 
+#ROUTING STATUS <<< H:/Desktop/Schematic & PCB/Schematic/Accelerometer/PCB\Accelerometer_v1.0.dsn >>>
+Start  Time: Report Time: Thu Mar 15 14:28:34 2018
+
+Nets         =        4   Connections         =        4
+Current Wire =        4   Reroute wires       =        4
+Completion   =  100.00%   Unconnections       =        0
+| ROUTING HISTORY ================================================================
+|     Pass     |   Conflicts |    |     |     |     |    |Red|      CPU Time     |
+|   Name   |No.| Cross| Clear|Fail|Unrte| Vias|XTalk|Len.| % |  Pass   |  Total  |
+|----------+---+------+------+----+-----+-----+-----+----+---+---------+---------|
+| Route    |  1|     0|     0|   0|    0|    0|    0|   0|  0|  0:00:00|  0:00:00|
+| Clean    |  2|     0|     0|   0|    0|    0|    0|   0|   |  0:00:00|  0:00:00|
+| Clean    |  3|     0|     0|   0|    0|    0|    0|   0|   |  0:00:00|  0:00:00|
+| Conflicts between polygon wires and fixed objects:   0

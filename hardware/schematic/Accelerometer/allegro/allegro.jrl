@@ -1,0 +1,26 @@
+\t (00:00:01) allegro 17.2 S013 Windows SPB 64-bit Edition
+\t (00:00:01)     Journal start - Thu Mar 15 14:20:54 2018
+\t (00:00:01)         Host=RANK329-23 User=2064224z Pid=12520 CPUs=8
+\t (00:00:01) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe
+\t (00:00:01) 
+   (00:00:01) Loading axlcore.cxt 
+\t (00:00:03) Starting new design...
+\i (00:00:03) trapsize 669
+\i (00:00:03) trapsize 684
+\i (00:00:03) trapsize 1126
+\i (00:00:03) generaledit 
+\i (00:00:04) pick grid 2566.9 13802.6
+\t (00:00:04) last pick:  2600.0 13800.0
+\i (00:00:07) enved 
+\i (00:00:07) generaledit 
+\i (00:00:09) setwindow form.prfedit
+\i (00:00:09) FORM prfedit treelist  Config Paths 
+\i (00:00:10) FORM prfedit treelist  Editor Paths 
+\i (00:00:10) FORM prfedit treelist  Library Paths 
+\i (00:00:12) FORM prfedit padpath  
+\t (00:00:24) last pick:  32896.7 8758.9
+\w (00:00:24) WARNING(SPMHUT-40): Pick is outside the extent of the drawing ... pick again.
+\i (00:00:28) FORM prfedit cancel  
+\i (00:03:12) setwindow pcb
+\i (00:03:12) exit 
+\t (00:03:12)     Journal end - Thu Mar 15 14:24:05 2018

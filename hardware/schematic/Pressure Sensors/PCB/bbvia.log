@@ -1,0 +1,25 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Allegro Automatic B/B Via Creation                               )
+(                                                                     )
+(    Software Version : 17.2S013                                      )
+(    Date/Time        : Fri Mar 16 16:08:11 2018                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Via to be copied: Gu-via80
+Start subclass: TOP
+End subclass: BOTTOM
+Old drawing: H:/Desktop/Schematic & PCB/Schematic/Pressure Sensors/PCB/#Taaaaah02596.tmp
+New drawing: H:/Desktop/Schematic & PCB/Schematic/Pressure Sensors/PCB/#Taaaaah02596.tmp
+Vias added to physical constraint set: DEFAULT
+
+B/B Via TOP-BOTTOM created
+
+Number of padstacks created 1
+Number of existing padstacks that did not need to be modified: 0
+Number of existing padstacks that were modified: 0
+Number of existing padstacks that could not be modified: 0
+
+bbvia is complete.

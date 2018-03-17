@@ -1,0 +1,251 @@
+# 
+# ===============================================================================
+#                               Allegro PCB Router                               
+# Copyright 1990-2010 Cadence Design Systems, Inc.  All Rights Reserved.
+# ===============================================================================
+# 
+# Software licensed for sale by Cadence Design Systems, Inc.
+# Current time = Thu Mar 15 14:28:32 2018
+# 
+# Allegro PCB Router v17-2-50 made 2017/01/16 at 14:16:53
+# Running on: rank329-23, OS Version: WindowsNT 6.2.9200, Architecture: Intel Pentium II, III, or 4
+# Licensing: The program will not obey any unlicensed rules
+# No graphics will be displayed.
+# Design Name H:/Desktop/Schematic & PCB/Schematic/Accelerometer/PCB\Accelerometer_v1.0.dsn
+# Batch File Name: pasde.do
+# Did File Name: H:/Desktop/Schematic & PCB/Schematic/Accelerometer/PCB/specctra.did
+# Current time = Thu Mar 15 14:28:33 2018
+# PCB H:/Desktop/Schematic & PCB/Schematic/Accelerometer/PCB
+# Master Unit set up as: MIL 1000
+# PCB Limits xlo=-1066.0000 ylo=-435.5000 xhi=496.0000 yhi=455.5000
+# Via 'GU-VIA80' z=1, 2 xlo=-40.0000 ylo=-40.0000 xhi= 40.0000 yhi= 40.0000
+# 
+#    VIA       TOP      BOTTOM  
+# 
+#    TOP  ----------  'GU-VIA80'
+# BOTTOM  'GU-VIA80'  ----------
+# 
+# Wires Processed 0, Vias Processed 0
+# Using colormap in design file.
+# Layers Processed: Signal Layers 2
+# Components Placed 2, Images Processed 4, Padstacks Processed 6
+# Nets Processed 4, Net Terminals 8
+# PCB Area=1150200.000  EIC=0  Area/EIC=  0.000  SMDs=0
+# Total Pin Count: 10
+# Signal Connections Created 4
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0100 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# 
+# Wiring Statistics ----------------- H:/Desktop/Schematic & PCB/Schematic/Accelerometer/PCB\Accelerometer_v1.0.dsn
+# Nets 4 Connections 4 Unroutes 4
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 0, at vias 0 Total Vias 0
+# Percent Connected    0.00
+# Manhattan Length 2393.8600 Horizontal 2348.2000 Vertical  45.6600
+# Routed Length   0.0000 Horizontal   0.0000 Vertical   0.0000
+# Ratio Actual / Manhattan   0.0000
+# Unconnected Length 2393.8600 Horizontal 2348.2000 Vertical  45.6600
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# Loading Do File pasde.do ...
+# Loading Do File H:/Desktop/Schematic & PCB/Schematic/Accelerometer/PCB\Accelerometer_v1.0_rules.do ...
+# Colormap Written to File _notify.std
+# Enter command <# Loading Do File C:/Users/2064224z/AppData/Local/Temp/#Taaaaag05452.tmp ...
+# All Components Unselected.
+# All Nets Unselected.
+set route_diagonal 0
+grid wire 0.010000 (direction x) (offset 0.000000)
+grid wire 0.010000 (direction y) (offset 0.000000)
+grid via 0.010000 (direction x) (offset 0.000000)
+grid via 0.010000 (direction y) (offset 0.000000)
+protect all wires
+# All Wires Protected.
+direction TOP horizontal
+select layer TOP
+unprotect layer_wires TOP
+# Wires on layer TOP were Unprotected.
+direction BOTTOM vertical
+select layer BOTTOM
+unprotect layer_wires BOTTOM
+# Wires on layer BOTTOM were Unprotected.
+cost via -1
+# System default cost will be used.
+set turbo_stagger off
+limit outside -1
+rule pcb (patterns_allowed  trombone accordion)
+set pattern_stacking on
+rule pcb (sawtooth_amplitude -1 -1)
+rule pcb (sawtooth_gap -1)
+rule pcb (accordion_amplitude -1 -1)
+rule pcb (accordion_gap -1)
+rule pcb (trombone_run_length -1)
+rule pcb (trombone_gap -1)
+unprotect selected
+# All Selected Wires Unprotected.
+route 25 1
+# Command route detected pcb layer rule(s), mcm via rule(s), which require the RouteADV license feature.
+# All unlicensed rules are being ignored.
+# Command route will ignore pcb layer rule(s), mcm via rule(s)
+# Current time = Thu Mar 15 14:28:33 2018
+# 
+#    VIA       TOP      BOTTOM  
+# 
+#    TOP  ----------  'GU-VIA80'
+# BOTTOM  'GU-VIA80'  ----------
+# 
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0100 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# 
+# Wiring Statistics ----------------- H:/Desktop/Schematic & PCB/Schematic/Accelerometer/PCB\Accelerometer_v1.0.dsn
+# Nets 4 Connections 4 Unroutes 4
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 0, at vias 0 Total Vias 0
+# Percent Connected    0.00
+# Manhattan Length 2393.8600 Horizontal 2348.2000 Vertical  45.6600
+# Routed Length   0.0000 Horizontal   0.0000 Vertical   0.0000
+# Ratio Actual / Manhattan   0.0000
+# Unconnected Length 2393.8600 Horizontal 2348.2000 Vertical  45.6600
+# Start Route Pass 1 of 25
+# Routing 4 wires.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 0
+# Attempts 4 Successes 4 Failures 0 Vias 0
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# Command check detected pcb layer rule(s), mcm via rule(s), which require the RouteADV license feature.
+# All unlicensed rules are being ignored.
+# Command check will ignore pcb layer rule(s), mcm via rule(s)
+# End Pass 1 of 25
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0100 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# Command check detected pcb layer rule(s), mcm via rule(s), which require the RouteADV license feature.
+# All unlicensed rules are being ignored.
+# Command check will ignore pcb layer rule(s), mcm via rule(s)
+# ROUTING HISTORY ================================================================
+#     Pass     |   Conflicts |    |     |     |     |    |Red|      CPU Time     |
+#   Name   |No.| Cross| Clear|Fail|Unrte| Vias|XTalk|Len.| % |  Pass   |  Total  |
+#----------+---+------+------+----+-----+-----+-----+----+---+---------+---------|
+# Route    |  1|     0|     0|   0|    0|    0|    0|   0|  0|  0:00:00|  0:00:00|
+# Conflicts between polygon wires and fixed objects:   0
+# Stub Violations:   0
+# Net Order Violations:   0
+# Diffpair Uncoupled Length Violations:   0
+# Diffpair Phase Tolerance  Violations:   0
+# Total layerset violations:   0
+# Total layerset violations (exclude Fanout/Stagger/XNet Short side):   0
+# Overall Routing Time: 0:00:00
+# 
+# Wiring Statistics ----------------- H:/Desktop/Schematic & PCB/Schematic/Accelerometer/PCB\Accelerometer_v1.0.dsn
+# Nets 4 Connections 4 Unroutes 0
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 0, at vias 0 Total Vias 0
+# Percent Connected  100.00
+# Manhattan Length 2393.8600 Horizontal 2348.2000 Vertical  45.6600
+# Routed Length 2393.8600 Horizontal 2348.2000 Vertical  45.6600
+# Ratio Actual / Manhattan   1.0000
+# Unconnected Length   0.0000 Horizontal   0.0000 Vertical   0.0000
+clean 2
+# Command clean detected pcb layer rule(s), mcm via rule(s), which require the RouteADV license feature.
+# All unlicensed rules are being ignored.
+# Command clean will ignore pcb layer rule(s), mcm via rule(s)
+# Current time = Thu Mar 15 14:28:33 2018
+# 
+#    VIA       TOP      BOTTOM  
+# 
+#    TOP  ----------  'GU-VIA80'
+# BOTTOM  'GU-VIA80'  ----------
+# 
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0100 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# 
+# Wiring Statistics ----------------- H:/Desktop/Schematic & PCB/Schematic/Accelerometer/PCB\Accelerometer_v1.0.dsn
+# Nets 4 Connections 4 Unroutes 0
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 0, at vias 0 Total Vias 0
+# Percent Connected  100.00
+# Manhattan Length 2393.8600 Horizontal 2348.2000 Vertical  45.6600
+# Routed Length 2393.8600 Horizontal 2348.2000 Vertical  45.6600
+# Ratio Actual / Manhattan   1.0000
+# Unconnected Length   0.0000 Horizontal   0.0000 Vertical   0.0000
+# Start Clean Pass 1 of 2
+# Routing 4 wires.
+# Command check detected pcb layer rule(s), mcm via rule(s), which require the RouteADV license feature.
+# All unlicensed rules are being ignored.
+# Command check will ignore pcb layer rule(s), mcm via rule(s)
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 0
+# Attempts 4 Successes 4 Failures 0 Vias 0
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# Command check detected pcb layer rule(s), mcm via rule(s), which require the RouteADV license feature.
+# All unlicensed rules are being ignored.
+# Command check will ignore pcb layer rule(s), mcm via rule(s)
+# End Pass 1 of 2
+# Start Clean Pass 2 of 2
+# Routing 4 wires.
+# Command check detected pcb layer rule(s), mcm via rule(s), which require the RouteADV license feature.
+# All unlicensed rules are being ignored.
+# Command check will ignore pcb layer rule(s), mcm via rule(s)
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 0
+# Attempts 4 Successes 4 Failures 0 Vias 0
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# Command check detected pcb layer rule(s), mcm via rule(s), which require the RouteADV license feature.
+# All unlicensed rules are being ignored.
+# Command check will ignore pcb layer rule(s), mcm via rule(s)
+# End Pass 2 of 2
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:01
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0100 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# Command check detected pcb layer rule(s), mcm via rule(s), which require the RouteADV license feature.
+# All unlicensed rules are being ignored.
+# Command check will ignore pcb layer rule(s), mcm via rule(s)
+# ROUTING HISTORY ================================================================
+#     Pass     |   Conflicts |    |     |     |     |    |Red|      CPU Time     |
+#   Name   |No.| Cross| Clear|Fail|Unrte| Vias|XTalk|Len.| % |  Pass   |  Total  |
+#----------+---+------+------+----+-----+-----+-----+----+---+---------+---------|
+# Route    |  1|     0|     0|   0|    0|    0|    0|   0|  0|  0:00:00|  0:00:00|
+# Clean    |  2|     0|     0|   0|    0|    0|    0|   0|   |  0:00:00|  0:00:00|
+# Clean    |  3|     0|     0|   0|    0|    0|    0|   0|   |  0:00:00|  0:00:00|
+# Conflicts between polygon wires and fixed objects:   0
+# Stub Violations:   0
+# Net Order Violations:   0
+# Diffpair Uncoupled Length Violations:   0
+# Diffpair Phase Tolerance  Violations:   0
+# Total layerset violations:   0
+# Total layerset violations (exclude Fanout/Stagger/XNet Short side):   0
+# Overall Routing Time: 0:00:00
+# 
+# Wiring Statistics ----------------- H:/Desktop/Schematic & PCB/Schematic/Accelerometer/PCB\Accelerometer_v1.0.dsn
+# Nets 4 Connections 4 Unroutes 0
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 0, at vias 0 Total Vias 0
+# Percent Connected  100.00
+# Manhattan Length 2393.8600 Horizontal 2348.2000 Vertical  45.6600
+# Routed Length 2393.8600 Horizontal 2348.2000 Vertical  45.6600
+# Ratio Actual / Manhattan   1.0000
+# Unconnected Length   0.0000 Horizontal   0.0000 Vertical   0.0000
+write routes (changed_only) (reset_changed) C:/Users/2064224z/AppData/Local/Temp/#Taaaaah05452.tmp
+# Routing Written to File C:/Users/2064224z/AppData/Local/Temp/#Taaaaah05452.tmp
+quit

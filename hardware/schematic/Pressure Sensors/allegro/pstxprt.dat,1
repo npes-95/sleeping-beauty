@@ -1,0 +1,144 @@
+FILE_TYPE = EXPANDEDPARTLIST;
+{ Using PSTWRITER 17.2.0 d001Mar-15-2018 at 14:35:00 }
+DIRECTIVES
+ PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
+ ROOT_DRAWING='PRESSURE';
+ POST_TIME='Jan  9 2017 17:57:56';
+ SOURCE_TOOL='CAPTURE_WRITER';
+END_DIRECTIVES;
+
+PART_NAME
+ J3 '4 HEADER_USB-A_4 HEADER':;
+
+SECTION_NUMBER 1
+ '@PRESSURE.SCHEMATIC1(SCH_1):INS57261@CONNECTOR.4 HEADER.NORMAL(CHIPS)':
+ C_PATH='@pressure.schematic1(sch_1):ins57261@connector.\4 header.normal\(chips)',
+ P_PATH='@pressure.schematic1(sch_1):page1_ins57261@connector.\4 header.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J4 'HEADER 2_GU-TERMINAL2-200_HEADE':;
+
+SECTION_NUMBER 1
+ '@PRESSURE.SCHEMATIC1(SCH_1):INS57314@CONNECTOR.HEADER 2.NORMAL(CHIPS)':
+ C_PATH='@pressure.schematic1(sch_1):ins57314@connector.\header 2.normal\(chips)',
+ P_PATH='@pressure.schematic1(sch_1):page1_ins57314@connector.\header 2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J5 'HEADER 2_GU-TERMINAL2-200_HEADE':;
+
+SECTION_NUMBER 1
+ '@PRESSURE.SCHEMATIC1(SCH_1):INS57682@CONNECTOR.HEADER 2.NORMAL(CHIPS)':
+ C_PATH='@pressure.schematic1(sch_1):ins57682@connector.\header 2.normal\(chips)',
+ P_PATH='@pressure.schematic1(sch_1):page1_ins57682@connector.\header 2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J6 'HEADER 2_GU-TERMINAL2-200_HEADE':;
+
+SECTION_NUMBER 1
+ '@PRESSURE.SCHEMATIC1(SCH_1):INS57698@CONNECTOR.HEADER 2.NORMAL(CHIPS)':
+ C_PATH='@pressure.schematic1(sch_1):ins57698@connector.\header 2.normal\(chips)',
+ P_PATH='@pressure.schematic1(sch_1):page1_ins57698@connector.\header 2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J7 'HEADER 2_GU-TERMINAL2-200_HEADE':;
+
+SECTION_NUMBER 1
+ '@PRESSURE.SCHEMATIC1(SCH_1):INS57714@CONNECTOR.HEADER 2.NORMAL(CHIPS)':
+ C_PATH='@pressure.schematic1(sch_1):ins57714@connector.\header 2.normal\(chips)',
+ P_PATH='@pressure.schematic1(sch_1):page1_ins57714@connector.\header 2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J8 'HEADER 2_GU-TERMINAL2-200_HEADE':;
+
+SECTION_NUMBER 1
+ '@PRESSURE.SCHEMATIC1(SCH_1):INS57730@CONNECTOR.HEADER 2.NORMAL(CHIPS)':
+ C_PATH='@pressure.schematic1(sch_1):ins57730@connector.\header 2.normal\(chips)',
+ P_PATH='@pressure.schematic1(sch_1):page1_ins57730@connector.\header 2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R5 'R_GU-RC300_100K':;
+
+SECTION_NUMBER 1
+ '@PRESSURE.SCHEMATIC1(SCH_1):INS57497@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@pressure.schematic1(sch_1):ins57497@analog.\r.normal\(chips)',
+ P_PATH='@pressure.schematic1(sch_1):page1_ins57497@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R6 'R_GU-RC300_100K':;
+
+SECTION_NUMBER 1
+ '@PRESSURE.SCHEMATIC1(SCH_1):INS58008@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@pressure.schematic1(sch_1):ins58008@analog.\r.normal\(chips)',
+ P_PATH='@pressure.schematic1(sch_1):page1_ins58008@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R7 'R_GU-RC300_100K':;
+
+SECTION_NUMBER 1
+ '@PRESSURE.SCHEMATIC1(SCH_1):INS58081@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@pressure.schematic1(sch_1):ins58081@analog.\r.normal\(chips)',
+ P_PATH='@pressure.schematic1(sch_1):page1_ins58081@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R8 'R_GU-RC300_100K':;
+
+SECTION_NUMBER 1
+ '@PRESSURE.SCHEMATIC1(SCH_1):INS58155@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@pressure.schematic1(sch_1):ins58155@analog.\r.normal\(chips)',
+ P_PATH='@pressure.schematic1(sch_1):page1_ins58155@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U1 'LF353_GU-DIPSOCK8_LF353':;
+
+SECTION_NUMBER 1
+ '@PRESSURE.SCHEMATIC1(SCH_1):INS32@OPAMP.LF353.NORMAL(CHIPS)':
+ C_PATH='@pressure.schematic1(sch_1):ins32@opamp.\lf353.normal\(chips)',
+ P_PATH='@pressure.schematic1(sch_1):page1_ins32@opamp.\lf353.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='A';
+
+SECTION_NUMBER 2
+ '@PRESSURE.SCHEMATIC1(SCH_1):INS88@OPAMP.LF353.NORMAL(CHIPS)':
+ C_PATH='@pressure.schematic1(sch_1):ins88@opamp.\lf353.normal\(chips)',
+ P_PATH='@pressure.schematic1(sch_1):page1_ins88@opamp.\lf353.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='B';
+
+PART_NAME
+ U2 'LF353_GU-DIPSOCK8_LF353':;
+
+SECTION_NUMBER 1
+ '@PRESSURE.SCHEMATIC1(SCH_1):INS148@OPAMP.LF353.NORMAL(CHIPS)':
+ C_PATH='@pressure.schematic1(sch_1):ins148@opamp.\lf353.normal\(chips)',
+ P_PATH='@pressure.schematic1(sch_1):page1_ins148@opamp.\lf353.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='A';
+
+SECTION_NUMBER 2
+ '@PRESSURE.SCHEMATIC1(SCH_1):INS189@OPAMP.LF353.NORMAL(CHIPS)':
+ C_PATH='@pressure.schematic1(sch_1):ins189@opamp.\lf353.normal\(chips)',
+ P_PATH='@pressure.schematic1(sch_1):page1_ins189@opamp.\lf353.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='B';
+
+END.

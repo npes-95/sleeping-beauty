@@ -1,0 +1,115 @@
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   1  |
+|------------------------------------------------------------------------------|
+|  H:/Desktop/Schematic & PCB/Schematic/Pressure Sensors/PCB/Pressure.brd      |
+|                                                    Thu Mar 15 14:36:12 2018  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  5V           pins ADDED TO this new net
+                                 J4.1           J5.1           J6.1           
+                                 J7.1           J8.1           U1.8           
+                                 U2.8           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  GND          pins ADDED TO this new net
+                                 J4.2           R5.1           R6.1           
+                                 R7.1           R8.1           U1.4           
+                                 U2.4           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N57936       pins ADDED TO this new net
+                                 J8.2           R5.2           U1.3           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N58002       pins ADDED TO this new net
+                                 J7.2           R6.2           U1.5           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N58075       pins ADDED TO this new net
+                                 J6.2           R7.2           U2.3           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  N58149       pins ADDED TO this new net
+                                 J5.2           R8.2           U2.5           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VOUT1        pins ADDED TO this new net
+                                 J3.4           U1.1           U1.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VOUT2        pins ADDED TO this new net
+                                 J3.3           U1.6           U1.7           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VOUT3        pins ADDED TO this new net
+                                 J3.2           U2.1           U2.2           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VOUT4        pins ADDED TO this new net
+                                 J3.1           U2.6           U2.7           
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   2  |
+|------------------------------------------------------------------------------|
+|  H:/Desktop/Schematic & PCB/Schematic/Pressure Sensors/PCB/Pressure.brd      |
+|                                                    Thu Mar 15 14:36:12 2018  |
+|------------------------------------------------------------------------------|
+| COMPONENT DEFINITION added to design                                         |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    device type                                                               |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ 4 HEADER_USB-A_4 HEADER
+ HEADER 2_GU-TERMINAL2-200_HEADE
+ LF353_GU-DIPSOCK8_LF353
+ R_GU-RC300_100K
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   3  |
+|------------------------------------------------------------------------------|
+|  H:/Desktop/Schematic & PCB/Schematic/Pressure Sensors/PCB/Pressure.brd      |
+|                                                    Thu Mar 15 14:36:12 2018  |
+|------------------------------------------------------------------------------|
+| COMPONENTS ADDED to design                                                   |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|    ref des        |    device type                                           |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ J3                  4 HEADER_USB-A_4 HEADER 
+ J4                  HEADER 2_GU-TERMINAL2-200_HEADE 
+ J5                  HEADER 2_GU-TERMINAL2-200_HEADE 
+ J6                  HEADER 2_GU-TERMINAL2-200_HEADE 
+ J7                  HEADER 2_GU-TERMINAL2-200_HEADE 
+ J8                  HEADER 2_GU-TERMINAL2-200_HEADE 
+ R5                  R_GU-RC300_100K       
+ R6                  R_GU-RC300_100K       
+ R7                  R_GU-RC300_100K       
+ R8                  R_GU-RC300_100K       
+ U1                  LF353_GU-DIPSOCK8_LF353 
+ U2                  LF353_GU-DIPSOCK8_LF353 
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   4  |
+|------------------------------------------------------------------------------|
+|  H:/Desktop/Schematic & PCB/Schematic/Pressure Sensors/PCB/Pressure.brd      |
+|                                                    Thu Mar 15 14:36:12 2018  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ J3.4                           PRIM_FILE      .\pstchip.dat
+ J4.2                           PRIM_FILE      .\pstchip.dat
+ J5.2                           PRIM_FILE      .\pstchip.dat
+ J6.2                           PRIM_FILE      .\pstchip.dat
+ J7.2                           PRIM_FILE      .\pstchip.dat
+ J8.2                           PRIM_FILE      .\pstchip.dat
+ R5.2                           PRIM_FILE      .\pstchip.dat
+ R6.2                           PRIM_FILE      .\pstchip.dat
+ R7.2                           PRIM_FILE      .\pstchip.dat
+ R8.2                           PRIM_FILE      .\pstchip.dat
+ U1.3                           PRIM_FILE      .\pstchip.dat
+ U1.5                           PRIM_FILE      .\pstchip.dat
+ U2.3                           PRIM_FILE      .\pstchip.dat
+ U2.5                           PRIM_FILE      .\pstchip.dat
+|------------------------------------------------------------------------------|
+|       Nets changed          :      38                                        |
+|       Comp definitions added:       4                                        |
+|       Components added      :      12                                        |
+|       Slot property added   :      14                                        |
+|                                                                              |
+|   Total ECO changes reported:      68                                        |
+|------------------------------------------------------------------------------|

@@ -1,0 +1,15 @@
+\t (00:00:02) allegro 17.2 S013 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Thu Mar 15 14:33:24 2018
+\t (00:00:02)         Host=RANK329-23 User=2064224z Pid=1296 CPUs=8
+\t (00:00:02) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+\t (00:00:03) Opening existing design...
+\d (00:00:03) Design opened: H:/Desktop/Schematic & PCB/Schematic/Accelerometer/PCB/Accelerometer_v1.0.brd
+\i (00:00:03) trapsize 1376
+\i (00:00:03) trapsize 1407
+\i (00:00:03) trapsize 1407
+\i (00:00:04) generaledit 
+\i (00:00:06) new 
+\i (00:00:21) newdrawfillin "Pressure.brd" "Board"
+\t (00:00:21)     Journal end - Thu Mar 15 14:33:43 2018
