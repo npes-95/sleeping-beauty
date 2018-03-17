@@ -26,21 +26,21 @@ Between the sleep cycles (when it is the easiest to wake up) a person usually ch
 
 ## Main Board
 
-![alt text](https://github.com/npes-95/sleeping-beauty/hardware/schematic/Main Schematic.PNG)
+![alt text](https://github.com/npes-95/sleeping-beauty/blob/master/hardware/schematic/Main%20Schematic.PNG)
 
-![alt text](https://github.com/npes-95/sleeping-beauty/hardware/pcb/Main PCB.PNG)
+![alt text](https://github.com/npes-95/sleeping-beauty/blob/master/hardware/pcb/Main%20PCB.PNG)
 
 ## Pressure Board
 
-![alt text](https://github.com/npes-95/sleeping-beauty/hardware/schematic/Pressure Schematic.PNG)
+![alt text](https://github.com/npes-95/sleeping-beauty/blob/master/hardware/schematic/Pressure%20Schematic.PNG)
 
-![alt text](https://github.com/npes-95/sleeping-beauty/hardware/pcb/Pressure PCB.PNG)
+![alt text](https://github.com/npes-95/sleeping-beauty/blob/master/hardware/pcb/Pressure%20PCB.PNG)
 
 ## Accelerometer Board
 
-![alt text](https://github.com/npes-95/sleeping-beauty/hardware/schematic/Accelerometer Schematic.PNG)
+![alt text](https://github.com/npes-95/sleeping-beauty/blob/master/hardware/schematic/Accelerometer%20Schematic.PNG)
 
-![alt text](https://github.com/npes-95/sleeping-beauty/hardware/pcb/Accelerometer.PNG)
+![alt text](https://github.com/npes-95/sleeping-beauty/blob/master/hardware/pcb/Accelerometer.PNG)
 
 ## Project specifications:
 
