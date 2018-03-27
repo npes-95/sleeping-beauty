@@ -7,6 +7,7 @@
 #include <qwt/qwt_plot_curve.h>
 
 #include "../../../interfaces/adc/MCP3008.h"
+#include "../../../interfaces/accelerometer/LIS3DH.h"
 
 #include <QBoxLayout>
 
@@ -30,23 +31,35 @@ public slots:
 
 // internal variables for the window class
 private:
-	QwtPlot      *plot1;
-	QwtPlotCurve *curve1;
-	QwtPlot      *plot2;
-	QwtPlotCurve *curve2;
-	QwtPlot      *plot3;
-	QwtPlotCurve *curve3;
-	QwtPlot      *plot4;
-	QwtPlotCurve *curve4;
+
+	// adc plots
+	QwtPlot      *plot1_adc;
+	QwtPlotCurve *curve1_adc;
+	QwtPlot      *plot2_adc;
+	QwtPlotCurve *curve2_adc;
+	QwtPlot      *plot3_adc;
+	QwtPlotCurve *curve3_adc;
+	QwtPlot      *plot4_adc;
+	QwtPlotCurve *curve4_adc;
+	
+	// accelerometer plot (plot XYZ data on same plot)
+	QwtPlot      *plot_accel;
+	QwtPlotCurve *curve_x_accel;
+	QwtPlotCurve *curve_y_accel;
+	QwtPlotCurve *curve_z_accel;
 	
 
 	// layout elements from Qt itself http://qt-project.org/doc/qt-4.8/classes.html
 	QVBoxLayout  *vLayout1;  // vertical layout
 	QVBoxLayout  *vLayout2;  // vertical layout
+	QVBoxLayout  *vLayout3;  // vertical layout
 	QHBoxLayout  *hLayout;  // horizontal layout
 	
-	// adc
+	// adc (with pressure sensors connected)
 	MCP3008 *adc;
+	
+	// accelerometer
+	LIS3DH *accel;
 
 	static const int plotDataSize = 100;
 
@@ -56,6 +69,10 @@ private:
 	double yData2[plotDataSize];
 	double yData3[plotDataSize];
 	double yData4[plotDataSize];
+	double yData5[plotDataSize];
+	double yData6[plotDataSize];
+	double yData7[plotDataSize];
+
 
 	double gain;
 	int count;

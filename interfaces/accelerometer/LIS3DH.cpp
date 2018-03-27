@@ -47,7 +47,7 @@ LIS3DH::LIS3DH()
 	}
 	
 	
-	// settings/startup sequence
+	// settings/startup sequence (this only needs to happen when the device is powered on)
 
    // enable all axes, set data rate to 10Hz, disable low power mode
    wiringPiI2CWriteReg8(fd, CNTRL_REG_1, 0x27);
