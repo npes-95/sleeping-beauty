@@ -2,17 +2,17 @@
 
 void Thread::start()
 {
-    pthread_create(&thread, NULL, Parallel::staticEntryPoint, this);
+    pthread_create(&thread, NULL, Thread::staticEntryPoint, this);
 }
 
 void * Thread::staticEntryPoint(void * c)
 {
-    ((Parallel *) c)->entryPoint();
+    ((Thread *) c)->entryPoint();
     return NULL;
 }
 
 void Thread::entryPoint()
 {
     // thread body
-    // inherit this class and use it as an easy way to make threads
+    // inherit this class and override this function
 }
