@@ -27,7 +27,6 @@ void DataIn::entryPoint()
 	// this is where we want to do stuff
 	while(running)
 	{
-		// wait for analysis thread to be done with data (copy it out??)
 		// get data and place in buffer at sample freq
 		while(int i = 0 < buflen)
 		{
@@ -40,8 +39,9 @@ void DataIn::entryPoint()
 			usleep(sample_period);		
 		}
 		
+		
 		// when buffer is full, send signal to analysis thread to say that the data is available
-		// TO DO: signal constructs
+		raise(SIGINT);
 	}
 	
 }
@@ -50,3 +50,5 @@ void DataIn::stop()
 {
 	running = false;
 }
+
+

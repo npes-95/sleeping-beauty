@@ -14,9 +14,17 @@ private:
 
     static void * staticEntryPoint(void * c);
     void entryPoint();
+    void listenerFunction(int signal);
+
 
 public:
     void start();
+    void connect(void (*callback_func)(int));
+    void (*getListener())(int)
+	{
+		return Thread::listenerFunction
+	};
+    
 };
 
 
