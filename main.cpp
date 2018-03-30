@@ -21,8 +21,12 @@ int main(int argc, char **argv)
 	DataAnalysis *sensorDataAnalyse;
 	sensorDataAnalyse = new DataAnalysis(adc1buf, adc2buf, adc3buf, adc4buf, accelbuf, buflen, sample_period);
 	
-	// connect the two threads so they are synchronised
-	sensorDataCollect.connect(sensorDataAnalyse.getListener());
+	// pass semaphore to threads so they are synchronised
+	static sem_t dataAvailable;
+	sem_init(&dataAvailable,0,0);
+	
+	sensorDataCollect.sync(dataAvailable);
+	sensorDataAnalyse.sync(dataAvailable);
 	
 	
 	// init bluetooth thread

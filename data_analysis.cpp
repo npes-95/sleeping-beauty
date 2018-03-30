@@ -31,7 +31,7 @@ void DataAnalysis::entryPoint()
 	while(running)
 	{
 		// wait for collect thread to send signal indicating data is ready
-		
+		sem_wait(&signal)
 		// copy data into internal class memory
 		
 		// run peak to mean ratio over window
@@ -48,7 +48,3 @@ void DataAnalysis::stop()
 	running = false;
 }
 
-void DataAnalysis::listenerFunction(int signal)
-{
-	dataAvailable = true;
-}

@@ -41,7 +41,7 @@ void DataIn::entryPoint()
 		
 		
 		// when buffer is full, send signal to analysis thread to say that the data is available
-		raise(SIGINT);
+		sem_post(&signal);
 	}
 	
 }

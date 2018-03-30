@@ -35,9 +35,6 @@ private:
 	// override thread function here
 	void entryPoint() override;
 	
-	// callback function for servicing the incoming data available signal
-	void listenerFunction() override;
-	
 	
 };
 

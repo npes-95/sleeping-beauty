@@ -17,7 +17,6 @@ public:
 private:
 
 	
-
 	// addresses for data buffers
 	int adc1_data;
 	int adc2_data;

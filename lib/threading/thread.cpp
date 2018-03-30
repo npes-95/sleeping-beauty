@@ -24,7 +24,7 @@ void Thread::connect(void (*callback_func)(int))
 	
 } 
 
-void Thread::listenerFunction(int signal)
+void Thread::sync(sem_t semaphore)
 {
-	// user can choose what to do what happens when thread receives a signal
+	signal = semaphore;
 }

@@ -4,6 +4,7 @@
 #define THREAD_H
 
 #include <pthread.h>
+#include <semaphore.h>
 
 using namespace std;
 
@@ -11,20 +12,16 @@ class Thread
 {
 private:
     pthread_t thread;
+    
+    sem_t signal;
 
     static void * staticEntryPoint(void * c);
     void entryPoint();
-    void listenerFunction(int signal);
 
 
 public:
     void start();
-    void connect(void (*callback_func)(int));
-    void (*getListener())(int)
-	{
-		return Thread::listenerFunction
-	};
-    
+    void sync(sem_t semaphore);   
 };
 
 
