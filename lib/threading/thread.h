@@ -12,8 +12,6 @@ class Thread
 {
 private:
     pthread_t thread;
-    
-    sem_t signal;
 
     static void * staticEntryPoint(void * c);
     void entryPoint();
@@ -21,7 +19,6 @@ private:
 
 public:
     void start();
-    void sync(sem_t semaphore);   
 };
 
 

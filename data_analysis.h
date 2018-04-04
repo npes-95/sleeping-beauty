@@ -3,22 +3,24 @@
 
 #include <unistd.h>
 #include "lib/threading/thread.h"
+#include "lib/circular_buffer/circular_buffer.h"
 
 class DataAnalysis : public Thread
 {
 public:
 
-	DataAnalysis(int adc1_addr, int adc2_addr, int adc3_addr, int adc4_addr, int accel_addr, int buffer_length, int samp_per);
+	DataAnalysis(CircularBuffer& adc1_addr, CircularBuffer& adc2_addr, CircularBuffer& adc3_addr, CircularBuffer& adc4_addr, CircularBuffer& accel_addr, int buffer_length, int samp_per);
 	void stop();
 	
 private:	
 
 	// addresses for data buffers
-	int adc1_data;
-	int adc2_data;
-	int adc3_data;
-	int adc4_data;
-	int accel_data;
+	CircularBuffer& adc1_data;
+	CircularBuffer& adc2_data;
+	CircularBuffer& adc3_data;
+	CircularBuffer& adc4_data;
+	CircularBuffer& accel_data;
+	
 	
 	// buffer length
 	int buflen;
@@ -28,9 +30,6 @@ private:
 	
 	// status
 	bool running;
-	
-	// see if data is available
-	bool dataAvailable;
 	
 	// override thread function here
 	void entryPoint() override;

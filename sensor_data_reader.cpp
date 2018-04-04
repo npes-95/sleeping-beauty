@@ -1,6 +1,6 @@
 #include "sensor_data_reader.h"
 
-void DataIn::DataIn(int adc1_addr, int adc2_addr, int adc3_addr, int adc4_addr, int accel_addr, int buffer_length, int samp_per)
+void DataIn::DataIn(CircularBuffer& adc1_addr, CircularBuffer& adc2_addr, CircularBuffer& adc3_addr, CircularBuffer& adc4_addr, CircularBuffer& accel_addr, int buffer_length, int samp_per)
 {
 	adc1_data = adc1_addr;
 	adc2_data = adc2_addr;
@@ -27,21 +27,24 @@ void DataIn::entryPoint()
 	// this is where we want to do stuff
 	while(running)
 	{
-		// get data and place in buffer at sample freq
-		while(int i = 0 < buflen)
+		// while there is space in the buffer get data and place in buffer at sample freq
+		while(!adc1_data->full() && !adc2_data->full() && !adc3_data->full() && !adc4_data->full() && !accel_data->full())
 		{
-			adc1_data[i] = adc->readChannel(0);
-			adc2_data[i] = adc->readChannel(1);
-			adc3_data[i] = adc->readChannel(2);
-			adc4_data[i] = adc->readChannel(3);
-			accel_data[i] = accel->readX();
+			adc1_data->put(adc->readChannel(0));
+			adc2_data->put(adc->readChannel(1));
+			adc3_data->put(adc->readChannel(2));
+			adc4_data->put(adc->readChannel(3));
+			accel_data->put(accel->readX());
 			
 			usleep(sample_period);		
 		}
 		
+		// if this point is reached, the analysis function isn't fast enough to cope with the incoming data rate
+		// signal error
+		cout << "\n\nBuffer overflow!\n\n";
 		
-		// when buffer is full, send signal to analysis thread to say that the data is available
-		sem_post(&signal);
+		
+		
 	}
 	
 }
