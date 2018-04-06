@@ -9,7 +9,7 @@
 * You are not seeing an accidental off-by-one.
 * 
 * 
-* CLASS TAKEN FROM: https://github.com/embeddedartistry/embedded-resources/blob/master/examples/cpp/circular_buffer.cpp
+* Don't need to reinvent the wheel, class taken from: https://github.com/embeddedartistry/embedded-resources/blob/master/examples/cpp/circular_buffer.cpp
 * 
 * 
 */

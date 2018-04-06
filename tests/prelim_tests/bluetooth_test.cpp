@@ -16,7 +16,7 @@ int main(int argc, char **argv)
 	// this program will accept any bluetooth connection and print out the data sent
     struct sockaddr_rc loc_addr = { 0 }, rem_addr = { 0 };
     char buf[1024] = { 0 };
-    int s, client, bytes_read;
+    int s_receive, client, bytes_receive_read;
     socklen_t opt = sizeof(rem_addr);
     char pi_addr[18] = "B8:27:EB:EB:F6:E1";
     
@@ -26,20 +26,20 @@ int main(int argc, char **argv)
     system("sudo hciconfig hci0 piscan");
 
     // allocate socket
-    s = socket(AF_BLUETOOTH, SOCK_STREAM, BTPROTO_RFCOMM);
+    s_receive = socket(AF_BLUETOOTH, SOCK_STREAM, BTPROTO_RFCOMM);
 
     // bind socket to port 1 of the first available 
     // local bluetooth adapter
     loc_addr.rc_family = AF_BLUETOOTH;
     str2ba(pi_addr, &loc_addr.rc_bdaddr);
     loc_addr.rc_channel = (uint8_t) 1;
-    bind(s, (struct sockaddr *)&loc_addr, sizeof(loc_addr));
+    bind(s_receive, (struct sockaddr *)&loc_addr, sizeof(loc_addr));
 
     // put socket into listening mode
-    listen(s, 1);
+    listen(s_receive, 1);
 
     // accept one connection
-    client = accept(s, (struct sockaddr *)&rem_addr, &opt);
+    client = accept(s_receive, (struct sockaddr *)&rem_addr, &opt);
 
     ba2str( &rem_addr.rc_bdaddr, buf );
     fprintf(stderr, "Accepted connection from %s\n", buf);

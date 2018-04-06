@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include "sensor_data_reader.h"
 #include "data_analysis.h"
+#include "phone_connection.h"
 #include "lib/circular_buffer/circular_buffer.h"
 
 #define SAMPLE_RATE 1000 
@@ -29,20 +30,28 @@ int main(int argc, char **argv)
 	CircularBuffer<int> accelbuf(buflen);
 	
 	
-	// init sensor data collection and analysis threads
+	// init sensor data collection thread 
 	DataIn *sensorDataCollect;
 	sensorDataCollect = new DataIn(&adc1buf, &adc2buf, &adc3buf, &adc4buf, &accelbuf, buflen, sample_period);
 	
+	// init analysis thread
 	DataAnalysis *sensorDataAnalyse;
 	sensorDataAnalyse = new DataAnalysis(&adc1buf, &adc2buf, &adc3buf, &adc4buf, &accelbuf, buflen, sample_period);
 	
-	
 	// init bluetooth thread
+	Phone *userDevice;
+	userDevice = new Phone();
+	
+	// connect data analysis signal to phone slot (so a message is sent to the phone when movement is detected)
+	sensorDataAnalyse->connect(userDevice->peakDetected);
 	
 	
 	
-	// start threads here to launch data collection
-	sensorDataCollect.start();
+	// start threads here to launch data collection and analysis
+	sensorDataCollect->start();
+	sensorDataAnalyse->start();
+	userDevice->start();
+	
 	
 	// only check data if it is within the time alotted
 	

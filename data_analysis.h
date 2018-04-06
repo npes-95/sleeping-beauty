@@ -2,6 +2,7 @@
 #define DATA_ANALYSIS
 
 #include <unistd.h>
+#include <csignal>
 #include "lib/threading/thread.h"
 #include "lib/circular_buffer/circular_buffer.h"
 
@@ -11,6 +12,7 @@ public:
 
 	DataAnalysis(CircularBuffer& adc1_addr, CircularBuffer& adc2_addr, CircularBuffer& adc3_addr, CircularBuffer& adc4_addr, CircularBuffer& accel_addr, int buffer_length, int samp_per);
 	void stop();
+	void connect(void (*callback_func)(int));
 	
 private:	
 

@@ -88,15 +88,20 @@ void DataAnalysis::entryPoint()
 		adc2_window_mean /= buflen/2;
 		adc3_window_mean /= buflen/2;
 		adc4_window_mean /= buflen/2;
-		accel_window_mean /= buflen/2
+		accel_window_mean /= buflen/2;
 		
 		
 		// get average peak to mean ratio over all five sensors
-		float delta_pmr_mean = (adc1_peak/adc1_mean + adc2_peak/adc2_mean + adc3_peak/adc3_mean + adc4_peak/adc4_mean + accel_peak/accel_mean)/5
+		float delta_pmr_mean = (adc1_peak/adc1_mean + adc2_peak/adc2_mean + adc3_peak/adc3_mean + adc4_peak/adc4_mean + accel_peak/accel_mean)/5;
 		
 		// if it exceeds certain amount, log as movement, send signal to phone to wake up
-	
-		// TO DO: signal construct for bluetooth
+		if(delta_pmr_mean>1.1)
+		{
+			// TO DO: signal construct for bluetooth
+			raise(SIGINT);
+			
+		}	
+		
 	}
 	
 }
@@ -105,4 +110,12 @@ void DataAnalysis::stop()
 {
 	running = false;
 }
+
+
++void DataAnalysis::connect(void (*callback_func)(int))
++{
++	// specify a listener function that will be called when the signal is raised (ie: bluetooth thread)
++	signal(SIGINT, callback_func);
++	
++} 
 
