@@ -2,7 +2,7 @@
 
 void Phone::Phone()
 {
-	// init bluetooth connection here
+	// init server connection here
 	
 }
 
@@ -13,7 +13,7 @@ void Phone::entryPoint()
 	
 	while(running)
 	{
-		// wait for phone messages
+		// wait for server messages (which is connected to app)
 	}
 	
 	
