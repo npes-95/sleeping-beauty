@@ -29,5 +29,5 @@ server.listen(port, "0.0.0.0");
 // pings itself, keeps the free-tier heroku from going to sleep
 const http = require("http");
 setInterval(function() {
-  http.get("https://sleeping-beauty-api.herokuapp.com/test-availability");
+  http.get("http://sleeping-beauty-api.herokuapp.com/test-availability");
 }, 300000); // every 5 minutes (300000)
