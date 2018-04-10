@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <curl/curl.h>
+#include <time.h>
 
 using namespace std;
 
@@ -41,13 +42,16 @@ int main(void)
 	
   // output variables
   bool alarmSet;
+  struct tm alarmTime;
+  
+  // curl used to fetch data from server 
   CURL *curl;
   CURLcode res;
-
   curl = curl_easy_init();
   
   
   
+  // allocate memory to read in json
   struct MemoryStruct json_buf;
  
   json_buf.memory = (char*)malloc(1);  /* will be grown as needed by the realloc above */ 
@@ -84,11 +88,12 @@ int main(void)
     /* always cleanup */
     curl_easy_cleanup(curl);   
     
-    
-    
+
     
     
     string output = json_buf.memory;
+    
+    cout << output.substr(18,19) << endl;
     
     
     // since we know the format of the retuned json, we can easily parse the values
@@ -103,7 +108,32 @@ int main(void)
 		alarmSet = true;
 	}
 	
-	// TODO: parse date and time 
+	// parse date and time 
+	strptime(output.substr(18,19).c_str(), "%Y-%m-%dT%H:%M:%S", &alarmTime );
+	
+	
+	// check whether we are within half an hour of the set time
+	
+	time_t raw_time = time(NULL);
+	tm* current_time = localtime(&raw_time);
+	int currentHour = current_time->tm_hour;
+	int currentMin = current_time->tm_min;
+	
+	if(alarmTime.tm_hour == currentHour && alarmTime.tm_min > currentMin-30)
+	{
+		cout << "Monitoring sleep movement" << endl;
+		
+	}
+	
+	else
+	{
+		cout << "Not monitoring sleep movement" << endl;
+	}
+	
+	
+	cout << "Alarm set: " << alarmSet << endl;
+	//cout << "Alarm time: " << alarmTime.tm_hour << " " << alarmTime.tm_min << " " << alarmTime.tm_sec << endl;
+	
     
    
     
