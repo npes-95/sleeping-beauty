@@ -21,7 +21,8 @@ public:
 		buf_(std::unique_ptr<T[]>(new T[size])),
 		size_(size)
 	{
-		//empty constructor
+		head_ = 0;
+		tail_ = 0;
 	}
 
 	void put(T item)
@@ -37,7 +38,7 @@ public:
 		}
 	}
 
-	T get(void) const
+	T get(void) 
 	{
 		std::lock_guard<std::mutex> lock(mutex_);
 
@@ -59,27 +60,27 @@ public:
 		head_ = tail_;
 	}
 
-	bool empty(void) const
+	bool empty(void) 
 	{
 		//if head and tail are equal, we are empty
 		return head_ == tail_;
 	}
 
-	bool full(void) const
+	bool full(void) 
 	{
 		//If tail is ahead the head by 1, we are full
 		return ((head_ + 1) % size_) == tail_;
 	}
 
-	size_t size(void) const
+	size_t size(void) 
 	{
 		return size_ - 1;
 	}
 
 private:
-	std::mutex mutex_;
+	mutable std::mutex mutex_;
 	std::unique_ptr<T[]> buf_;
-	size_t head_ = 0;
-	size_t tail_ = 0;
+	size_t head_;
+	size_t tail_;
 	size_t size_;
 };
