@@ -52,7 +52,4 @@ int main(int argc, char **argv)
 	sensorDataAnalyse->start();
 	userDevice->start();
 	
-	
-	// only check data if it is within the time alotted
-	
 }

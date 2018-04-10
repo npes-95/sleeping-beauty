@@ -2,6 +2,8 @@
 #define PHONE_CONNCTION
 
 #include <unistd.h>
+#include <time.h>
+#include "lib/interfaces/server/server_comms.h"
 
 class Phone : public Thread
 {
@@ -18,6 +20,12 @@ private:
 	
 	// override thread function here
 	void entryPoint() override;
+	
+	// server ouput values
+	struct tm alarmTime;
+	bool alarmSet;
+	
+	Server *server;
 	
 	
 };
