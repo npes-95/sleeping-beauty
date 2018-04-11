@@ -19,7 +19,7 @@ void DataAnalysis::DataAnalysis(CircularBuffer& adc1_addr, CircularBuffer& adc2_
 	
 }
 
-void DataAnalysis::entryPoint()
+void DataAnalysis::run()
 {
 	// at this point the thread has been started
 	running = true;

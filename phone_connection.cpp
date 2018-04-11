@@ -7,7 +7,7 @@ void Phone::Phone()
 	
 }
 
-void Phone::entryPoint()
+void Phone::run()
 {
 	// at this point the thread has been started
 	running = true;

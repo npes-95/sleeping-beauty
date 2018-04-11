@@ -19,7 +19,7 @@ void DataIn::DataIn(CircularBuffer& adc1_addr, CircularBuffer& adc2_addr, Circul
 	
 }
 
-void DataIn::entryPoint()
+void DataIn::run()
 {
 	// at this point the thread has been started
 	running = true;

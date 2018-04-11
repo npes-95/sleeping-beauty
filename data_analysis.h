@@ -34,7 +34,7 @@ private:
 	bool running;
 	
 	// override thread function here
-	void entryPoint() override;
+	void run();
 	
 	
 };
