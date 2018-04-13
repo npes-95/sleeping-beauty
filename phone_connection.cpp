@@ -1,9 +1,16 @@
-#include "data_analysis.h"
+#include "phone_connection.h"
 
-void Phone::Phone()
+Phone::Phone()
 {
 	// init server connection here
 	server = new Server();
+	
+	// get alarm data from server to reset static variables
+	server->read();
+	alarmTime = server->getAlarmTime();
+	alarmSet = server->getAlarmSet();
+	
+	cout << "Connection to server established." << endl;
 	
 }
 
@@ -14,6 +21,8 @@ void Phone::run()
 	
 	while(running)
 	{
+		
+		
 		// poll server every minute and check if anything has changed
 		server->read();
 		
@@ -36,6 +45,8 @@ void Phone::peakDetected(int signal)
 {
 	// activate alarm if alarm has been set and we are within half an hour of the set time when a peak has been detected
 	
+	cout << "Peak detected, signal received." << endl;
+	
 	// get current time
 	time_t raw_time = time(NULL);
 	tm* current_time = localtime(&raw_time);
@@ -45,7 +56,29 @@ void Phone::peakDetected(int signal)
 	
 	if(alarmTime.tm_hour == currentHour && alarmTime.tm_min > currentMin-30 && alarmSet)
 	{
-		// do something here
+		// activate alarm
+		
+		int buttonPin = 0;
+		int speakerPin = 4;
+		
+		// setup pin connections
+		wiringPiSetup();	
+		pinMode(buttonPin, INPUT);
+		pinMode(speakerPin, OUTPUT);
+		
+			// emit alarm tone until button has been pressed
+		while(!buttonPressed)
+		{
+			digitalWrite(speakerPin, HIGH);
+			usleep(800);
+			digitalWrite(4, LOW);
+			usleep(800);
+			buttonPressed = (bool)digitalRead(buttonPin);
+		}
 	}
 }
+
+// define the static variables
+bool Phone::alarmSet;
+struct tm Phone::alarmTime;
 

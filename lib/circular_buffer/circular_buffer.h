@@ -1,5 +1,8 @@
-#include <cstdio>
+#ifndef CIRCULAR_BUFFER_H
+#define CIRCULAR_BUFFER_H
 
+
+#include <cstdio>
 #include <memory>
 #include <mutex>
 
@@ -84,3 +87,5 @@ private:
 	size_t tail_;
 	size_t size_;
 };
+
+#endif

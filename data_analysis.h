@@ -3,25 +3,28 @@
 
 #include <unistd.h>
 #include <csignal>
+#include <iostream>
 #include "lib/threading/thread.h"
 #include "lib/circular_buffer/circular_buffer.h"
+
+using namespace std;
 
 class DataAnalysis : public Thread
 {
 public:
 
-	DataAnalysis(CircularBuffer& adc1_addr, CircularBuffer& adc2_addr, CircularBuffer& adc3_addr, CircularBuffer& adc4_addr, CircularBuffer& accel_addr, int buffer_length, int samp_per);
+	DataAnalysis(CircularBuffer<int> *adc1_addr, CircularBuffer<int> *adc2_addr, CircularBuffer<int> *adc3_addr, CircularBuffer<int> *adc4_addr, CircularBuffer<int> *accel_addr, int buffer_length, int samp_per);
 	void stop();
 	void connect(void (*callback_func)(int));
 	
 private:	
 
 	// addresses for data buffers
-	CircularBuffer& adc1_data;
-	CircularBuffer& adc2_data;
-	CircularBuffer& adc3_data;
-	CircularBuffer& adc4_data;
-	CircularBuffer& accel_data;
+	CircularBuffer<int> *adc1_data;
+	CircularBuffer<int> *adc2_data;
+	CircularBuffer<int> *adc3_data;
+	CircularBuffer<int> *adc4_data;
+	CircularBuffer<int> *accel_data;
 	
 	
 	// buffer length

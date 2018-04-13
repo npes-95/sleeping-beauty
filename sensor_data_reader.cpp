@@ -1,6 +1,6 @@
 #include "sensor_data_reader.h"
 
-void DataIn::DataIn(CircularBuffer& adc1_addr, CircularBuffer& adc2_addr, CircularBuffer& adc3_addr, CircularBuffer& adc4_addr, CircularBuffer& accel_addr, int buffer_length, int samp_per)
+DataIn::DataIn(CircularBuffer<int> *adc1_addr, CircularBuffer<int> *adc2_addr, CircularBuffer<int> *adc3_addr, CircularBuffer<int> *adc4_addr, CircularBuffer<int> *accel_addr, int buffer_length, int samp_per)
 {
 	adc1_data = adc1_addr;
 	adc2_data = adc2_addr;
@@ -16,6 +16,8 @@ void DataIn::DataIn(CircularBuffer& adc1_addr, CircularBuffer& adc2_addr, Circul
 	// setup sensors	
 	adc = new MCP3008();
 	accel = new LIS3DH();
+	
+	cout << "Sensor reader thread initialised" << endl;
 	
 }
 
