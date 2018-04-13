@@ -1,0 +1,35 @@
+#!/bin/bash
+# compiles all necessary files for sleeping beauty project
+
+
+
+# ~~~~~ COMPILE ~~~~~
+
+# HELPER CLASSES
+
+# sensor classes
+g++ -c lib/interfaces/adc/MCP3008.cpp lib/interfaces/accelerometer/LIS3DH.cpp
+
+# server class
+g++ -c lib/interfaces/server/server_comms.cpp
+
+# MAIN CLASSES/THREADS
+
+# data collection
+g++ -c sensor_data_reader.cpp
+
+# data analysis
+g++ -c data_analysis.cpp
+
+# phone/server/alarm connection 
+gcc -c phone_connection.cpp
+
+# main
+gcc -c main.cpp
+
+
+
+# ~~~~~ LINK ~~~~~
+
+g++ -o main data_analysis.o sensor_data_reader.o phone_connection.o LIS3DH.o MCP3008.o server_comms.o main.o -lpthread -lwiringPi -lcurl
+
