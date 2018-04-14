@@ -29,58 +29,72 @@ Between the sleep cycles (when it is the easiest to wake up) a person usually ch
 - [ ] **Responsiveness of the application**
 
 - [x] **Latency permitted between physical event and output** <br />
-1 second (not scientifically justified, but an educated guess).
+10 seconds (not scientifically justified, but an educated guess).
 
-- [ ] **Sampling rate** <br />
+- [] **Sampling rate** <br />
 The sampling rate of the components used is the following:
 - ADC: 50 – 200 kHz
-- Microphone: 32 – 64 kHz
 - Accelerometer: 1 Hz – 5 kHz <br />
 Due to the specifications of the project, the lowest sampling rate limit was chosen for the ADC and the microphone, while the suitable sampling rate for the accelerometer will have to be decided upon once tested.
 
 - [x] **Bus protocol** <br />
 A number of sensors is used for this project. The following bus protocols are used for the following sensors:
-- Microphone: I2S
 - Accelerometer: I2C -> [Check out our I2C demo!](https://youtu.be/kbwUbBWLsfQ)
 - Pressure sensors: SPI -> [Check out our SPI demo!](https://youtu.be/tLUy4hVlnH0)<br />
 Reason: avoids having to use chip select.
 
 - [x] **Number of channels** <br />
-Six: four pressure sensors, one accelerometer, one microphone.
+**Five:** four pressure sensors, one accelerometer.
 
 - [x] **Kernel or userspace** <br />
-Userspace: soft real time system, sampling rate requirements low enough.
+**Userspace:** soft real time system, sampling rate requirements low enough.
 
-- [ ] **Data flow from hardware to GUI**
+- [x] **Data flow from hardware to GUI** <br />
+In this project the data flow is rather from GUI to hardware, and is presented in the flowchart below.
 
-- [ ] **Buffering of data**
+![alt text](https://github.com/npes-95/sleeping-beauty/blob/master/media/RTEP_flowchart_App_Server_RPi.png)
 
-- [ ] **Latency introduced by buffering**
+Raspberry Pi asks the server every 1 minute what is the alarm status (whether the alarm is set and alarm time), and upon the time reaching half an hour before the alarm time set by the user, Raspberry Pi tracks the motion of the person. As soon as the person moves, the alarm is triggered.
+
+- [ ] **Buffering of data** <br />
+For effective processing of data, the data is sampled for 5 seconds, after which it is analysed using a peak detection algorithm (further discussed under *Postprocessing of data*.
+
+- [x] **Latency introduced by buffering** <br />
+**5 seconds,** since the data is sampled for 5 seconds.
 
 - [ ] **Postprocessing of data**
+Peak detection algorithm
 
 - [ ] **Threads**
 
-- [ ] **GUI implementation** <br />
-The GUI of choice at the moment is a phone app, but this option is still to be considered, and if it does not work, then create a webpage.
+
+- [x] **GUI implementation** <br />
+The GUI of choice is a phone app (iOS). The app was created  in Swift, using XCode. It is not availbale on the App Store, but the code for the current version is available [here](https://github.com/npes-95/sleeping-beauty/tree/master/app), and you can see what it looks like in our [demo video](). 
+
+The original plan was to make the app and the RPi communicate via Bluetooth. Due to the implementation complexity, the alternative solution was to make the app talk to the server, and RPi requests the alarm details from the server (no direct communication between the phone app and the RPi.
 
 - [ ] **Structure of the software in classes**
 
 - [x] **Team structure** <br />
-From the beginning everyone seemed to be equally involved in the project, willing to contribute as much as they can. If the eagerness persists and the project progresses effectively, no need to give out specific roles to the team members. If it turns out in the future that this is not working effectively, the roles and the contributions would have to be reconsidered.
+From the beginning everyone seemed to be equally involved in the project, willing to contribute as much as they can. The following team roles were  assigned:
+- Erika Bondareva: phone app + server.
+- Nicholas Smith: RPi code + testing.
+- Lukas Zitinskas: hardware.
 
 - [x] **Time allocation** <br />
-The time for hardware design coincided with final year project deadlines (for the presentation specifically). Hence, it took 3 weeks to sort out the hardware. 4 more weeks are allocated to software development, and then 2 weeks for debugging.
+The time for hardware design coincided with final year project deadlines (for the presentation specifically). Hence, it took 3 weeks to sort out the hardware. 4 more weeks are allocated to software development, and then 2 weeks for debugging. The time alloction has worked out successfully.
 
-- [ ] **Version control software**
+- [x] **Version control software**
+GitHub was used as the version control software, used via command line.
 
 - [x] **Release strategy / publication / publicity** <br />
-Our team is actively involved in various social media:
-- [Instagram](https://www.instagram.com/sleeping.beauty.uofg/)
+Our team has its own Twitter and Yotube pages:
 - [Twitter](https://twitter.com/SleepBeauty2018)
 - [Youtube](https://www.youtube.com/channel/UCnenRGqD6ltJDOzgHJ9lT9g)
 
-- [ ] **Success of the application**
+- [x] **Success of the application**
+**IT WORKED!**
+Watch out video demo [here]()
 
 ### Team members
 - **Erika Bondareva**
