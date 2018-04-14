@@ -26,7 +26,7 @@ Between the sleep cycles (when it is the easiest to wake up) a person usually ch
 
 ## Project specifications:
 
-- [ ] **Responsiveness of the application**
+- [ ] **Responsiveness of the application** <br />
 
 - [x] **Latency permitted between physical event and output** <br />
 10 seconds (not scientifically justified, but an educated guess).
@@ -62,10 +62,10 @@ For effective processing of data, the data is sampled for 5 seconds, after which
 - [x] **Latency introduced by buffering** <br />
 **5 seconds,** since the data is sampled for 5 seconds.
 
-- [ ] **Postprocessing of data**
+- [ ] **Postprocessing of data** <br />
 Peak detection algorithm
 
-- [ ] **Threads**
+- [ ] **Threads** <br />
 
 
 - [x] **GUI implementation** <br />
@@ -73,7 +73,7 @@ The GUI of choice is a phone app (iOS). The app was created  in Swift, using XCo
 
 The original plan was to make the app and the RPi communicate via Bluetooth. Due to the implementation complexity, the alternative solution was to make the app talk to the server, and RPi requests the alarm details from the server (no direct communication between the phone app and the RPi.
 
-- [ ] **Structure of the software in classes**
+- [ ] **Structure of the software in classes** <br />
 
 - [x] **Team structure** <br />
 From the beginning everyone seemed to be equally involved in the project, willing to contribute as much as they can. The following team roles were  assigned:
@@ -84,7 +84,7 @@ From the beginning everyone seemed to be equally involved in the project, willin
 - [x] **Time allocation** <br />
 The time for hardware design coincided with final year project deadlines (for the presentation specifically). Hence, it took 3 weeks to sort out the hardware. 4 more weeks are allocated to software development, and then 2 weeks for debugging. The time alloction has worked out successfully.
 
-- [x] **Version control software**
+- [x] **Version control software** <br />
 GitHub was used as the version control software, used via command line.
 
 - [x] **Release strategy / publication / publicity** <br />
@@ -92,7 +92,7 @@ Our team has its own Twitter and Yotube pages:
 - [Twitter](https://twitter.com/SleepBeauty2018)
 - [Youtube](https://www.youtube.com/channel/UCnenRGqD6ltJDOzgHJ9lT9g)
 
-- [x] **Success of the application**
+- [x] **Success of the application** <br />
 **IT WORKED!**
 Watch out video demo [here]()
 
