@@ -6,9 +6,9 @@ Code, schematics and supporting documentation for a smart alarm system that will
 
 1. Clone repository onto Raspberry Pi.
 2. Install WiringPi library.
-3. Run compiler script using '''sh compile_sleeping_beauty'''
+3. Run compiler script using ```sh compile_sleeping_beauty```
 4. Connect hardware to appropriate pins.
-5. Start the application using '''./main'''
+5. Start the application using ```./main```
 
 ## Motivation for the project
 
