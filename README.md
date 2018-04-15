@@ -2,6 +2,14 @@
 
 Code, schematics and supporting documentation for a smart alarm system that will monitor the user's sleep cycle in order to wake them at the optimal time. This system is implemented using a Raspberry Pi, bed mounted sensors and a smartphone GUI.
 
+## Installation
+
+1. Clone repository onto Raspberry Pi.
+2. Install WiringPi library.
+3. Run compiler script using '''sh compile_sleeping_beauty'''
+4. Connect hardware to appropriate pins.
+5. Start the application using '''./main'''
+
 ## Motivation for the project
 
 Sleeping is an essential part of everybody’s life. However, how often do you wake up feeling tired and wishing to press the snooze button and go back to sleep? Making the waking up process more pleasant became possible with the discoveries in human physiology and technology.
