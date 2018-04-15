@@ -108,3 +108,7 @@ Watch out video demo [here](https://youtu.be/f7Ah16N52p8).
 - **Erika Bondareva**
 - **Nicholas Smith**
 - **Lukas Zitinskas**
+
+### Acknowledgements
+
+The team would like to thank Nick Bailey for his help with the peak detection algorithm.
