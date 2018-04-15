@@ -58,7 +58,7 @@ void Phone::peakDetected(int signal)
 	{
 		// activate alarm
 		
-		int buttonPin = 0;
+		int buttonPin = 5;
 		int speakerPin = 4;
 		
 		// setup pin connections

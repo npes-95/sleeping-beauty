@@ -2,7 +2,7 @@
 #include <unistd.h>
 #include <wiringPi.h>
 
-#define BUTTON_PIN 0
+#define BUTTON_PIN 5
 
 using namespace std;
 
