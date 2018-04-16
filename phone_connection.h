@@ -1,15 +1,24 @@
 #ifndef PHONE_CONNCTION
 #define PHONE_CONNCTION
 
+#include <iostream>
 #include <unistd.h>
+#include <time.h>
+#include <stdio.h>
+#include "lib/threading/thread.h"
+#include "lib/interfaces/server/server_comms.h"
 
-class Phone : public Thread
+using namespace std;
+
+class Phone : public Thread 
 {
 public:
 
 	Phone();
 	void stop();
-	void peakDetected(int signal)
+	static void peakDetected(int signal);
+	static struct tm alarmTime;
+	static bool alarmSet;
 	
 private:	
 	
@@ -17,7 +26,11 @@ private:
 	bool running;
 	
 	// override thread function here
-	void entryPoint() override;
+	void run();
+	
+
+	
+	Server *server;
 	
 	
 };

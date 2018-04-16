@@ -22,6 +22,8 @@ int main(int argc, char **argv)
 	// get buffer length
 	int buflen = SAMPLE_RATE*2*WINDOW_SIZE;
 	
+	
+	
 	// init data buffers (need to be at least twice the window size ~10s)
 	CircularBuffer<int> adc1buf(buflen);
 	CircularBuffer<int> adc2buf(buflen);
@@ -31,28 +33,28 @@ int main(int argc, char **argv)
 	
 	
 	// init sensor data collection thread 
-	DataIn *sensorDataCollect;
-	sensorDataCollect = new DataIn(&adc1buf, &adc2buf, &adc3buf, &adc4buf, &accelbuf, buflen, sample_period);
+	DataIn sensorDataCollect(&adc1buf, &adc2buf, &adc3buf, &adc4buf, &accelbuf, buflen, sample_period);
 	
 	// init analysis thread
-	DataAnalysis *sensorDataAnalyse;
-	sensorDataAnalyse = new DataAnalysis(&adc1buf, &adc2buf, &adc3buf, &adc4buf, &accelbuf, buflen, sample_period);
+	DataAnalysis sensorDataAnalyse(&adc1buf, &adc2buf, &adc3buf, &adc4buf, &accelbuf, buflen, sample_period);
 	
-	// init bluetooth thread
-	Phone *userDevice;
-	userDevice = new Phone();
+	// init comms with phone thread
+	Phone userDevice;
 	
 	// connect data analysis signal to phone slot (so a message is sent to the phone when movement is detected)
-	sensorDataAnalyse->connect(userDevice->peakDetected);
+	sensorDataAnalyse.connect(userDevice.peakDetected);
 	
 	
 	
 	// start threads here to launch data collection and analysis
-	sensorDataCollect->start();
-	sensorDataAnalyse->start();
-	userDevice->start();
+	sensorDataCollect.start();
+	sensorDataAnalyse.start();
+	userDevice.start();
 	
+	cout << "\nCurrently monitoring sleep movement.\n" << endl;
 	
-	// only check data if it is within the time alotted
+	sensorDataCollect.join();
+	sensorDataAnalyse.join();
+	userDevice.join();
 	
 }

@@ -1,6 +1,5 @@
 (ExpressProject "Main_Board"
   (ProjectVersion "19981106")
-  (ProjectType "PCB")
   (Folder "Design Resources"
     (Folder "Library"
       (File ".\adc.olb"
@@ -115,9 +114,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 104 1423 104 626")
-        (Scroll "-411 6")
-        (Zoom "102")
+        (Placement "44 2 3 -1 -1 -8 -31 52 1352 52 511")
+        (Scroll "-421 0")
+        (Zoom "100")
         (Occurrence "/"))
       (Path "H:\DESKTOP\SCHEMATIC & PCB\SCHEMATIC\MAIN\MAIN_BOARD.DSN")
       (Schematic "SCHEMATIC1")

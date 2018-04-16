@@ -19,10 +19,10 @@ MCP3008::MCP3008(int spi_channel, int clk_speed)
 
 	if(fd<0)
 	{
-		cout << "Initialisation error, the device could not be opened (errno: " << fd << ")." << endl;
+		cout << "ADC initialisation error, the device could not be opened (errno: " << fd << ")." << endl;
 	} else
 	{
-		cout << "Initialisation successful! Device number: " << fd << endl;
+		cout << "ADC initialisation successful! Device number: " << fd << endl;
 	}
 
 }

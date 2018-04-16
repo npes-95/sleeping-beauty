@@ -39,11 +39,10 @@ LIS3DH::LIS3DH()
 
 	if(fd<0)
 	{
-		cout << "Initialisation error, the device could not be opened (errno: " << fd << ")." << endl;
+		cout << "Accelerometer initialisation error, the device could not be opened (errno: " << fd << ")." << endl;
 	} else
 	{
-		cout << "Initialisation successful! Device number: " << fd << endl;
-		cout << "Device ID: "<< wiringPiI2CReadReg8(fd, WHO_AM_I) << endl;
+		cout << "Accelerometer initialisation successful! Device number: " << fd << endl;
 	}
 	
 	
